@@ -1,0 +1,215 @@
+
+/* MIENTRAS ESTEMOS EN PROCESO DE DESARROLLO */
+
+.main-menu{
+    display: block;
+}
+
+
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:260px;
+overflow:visible;
+}
+
+.main-menu {
+background:#2C3039;
+font-family: 'Montserrat', sans-serif !important;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:150%;
+left:0;
+width:62px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:260px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#fff;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:100px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+
+
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+
+.left{
+ position: relative;
+ left: -10px;
+ 
+}
+.submenu-nav{
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.submenu-nav li a{
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+}
+.bg-none:hover{
+    background-color: #2C3039 !important;
+
+}
+
+.riesgos-seccion:hover{
+    background: #F25767;
+/* background: linear-gradient(90deg, #F25767 0%, rgba(242, 87, 103, 0) 98.54%); */
+}
+
+.observaciones-seccion:hover{
+    background: #6EBC7F;
+}
+
+.reuniones-seccion:hover{
+    background: #4846A6;
+}
+
+.inspecciones-seccion:hover{
+    background: #FD9D0E;
+}
+.default-hover:hover{
+    background: #02B7DC;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+
+.nav-item-primary{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 40px;
+    margin-right: 20px;
+    margin-left: 8px;
+}
+
+
+.nav-item{
+    height: 24px;
+    width: 24px;
+    margin-right: 20px;
+    margin-left: 17px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.submenu-nav{
+    font-size: 10px !important;
+    display: none;
+}
+.submenu-nav li a{
+    opacity: 0.6;
+}
+
+.submenu-nav li a:hover{
+    opacity: 1;
+}
+
+.subsubMenu{
+    display: none;
+    margin-left: 10px;
+}
+
+.activo{
+    display: block;
+}
+
+.activo-sub{
+    display: block;
+}
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Login Mosaikus</title>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="bg-login bg-login2">
+        
+    </div>
+    <div class="contenedor">
+        <div class="login login2">
+          <div class="header-login2">
+            <h1>FRIOPACIFICO</h1>
+          </div>
+
+       
+
+            <p class="error-general" id="errorGeneral">El email o la contraseña no es correcta</p>
+            <form id="formLogin">
+
+                <div class="input-email" id="div_email">
+                  <input type="email" class="" id="emailLogin" aria-describedby="emailHelp" placeholder="Correo Electrónico">
+                  <span class="error-email" id="errorEmail">Correo electrónico no válido</span> 
+                </div>
+
+                <div class="input-password" id="div_password">
+                  <input type="password" class="" id="passwordLogin" placeholder="Contraseña">
+                  <span class="error-pass" id="errorPass">Contraseña no válida</span>
+                </div>
+                <div class="captcha-login">
+                  <img src="./img/login/captcha.png" alt="login">
+                </div>
+               <div class="login-box">
+                 <button type="submit" id="submitLogin" class="btn-login btn-login2">Ingresar</button>
+               </div>
+
+               <div class="message-login message-login2">
+                 <a href="#">¿Olvidaste la Contraseña?</a>
+               </div>
+              </form>
+        </div>
+
+        <div class="footer-login footer-login2">
+          <h3>MOSAIKUS</h3>
+          <p>Creado por <span>ROMBUS</span></p>
+        </div>
+    </div>
+  </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

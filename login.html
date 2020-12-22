@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Login Mosaikus</title>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="bg-login bg-login1">
+        
+    </div>
+    <div class="contenedor">
+        <div class="login login1">
+          <div class="header-login1">
+            <h1>MOSAIKUS</h1>
+            <p>Creado por <span>ROMBUS</span></p>
+          </div>
+
+          <div class="logo-login1">
+            <svg width="140" height="61" viewBox="0 0 140 61" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M23.1655 19.2364L45.3238 38.4727V0L23.1655 19.2364Z" fill="#02B7DC"/>
+              <path d="M69.4962 19.2364L47.3379 38.4727V0L69.4962 19.2364Z" fill="#02B7DC"/>
+              <path d="M70.5034 19.2364L92.6617 38.4727V0L70.5034 19.2364Z" fill="#02B7DC"/>
+              <path d="M116.835 19.2364L94.6763 38.4727V0L116.835 19.2364Z" fill="#02B7DC"/>
+              <path d="M93.6689 41.7637L115.827 61V22.5273L93.6689 41.7637Z" fill="#02B7DC"/>
+              <path d="M140 41.7637L117.842 61V22.5273L140 41.7637Z" fill="#02B7DC"/>
+              <path d="M46.7842 41.7637L68.9424 61V22.5273L46.7842 41.7637Z" fill="#02B7DC"/>
+              <path d="M93.1148 41.7637L70.9565 61V22.5273L93.1148 41.7637Z" fill="#02B7DC"/>
+              <path d="M0 41.7637L22.1583 61V22.5273L0 41.7637Z" fill="#02B7DC"/>
+              <path d="M46.3306 41.7637L24.1724 61V22.5273L46.3306 41.7637Z" fill="#02B7DC"/>
+              </svg>
+              
+          </div>
+
+            <p class="error-general" id="errorGeneral">El email o la contraseña no es correcta</p>
+            <form id="formLogin">
+
+                <div class="input-email" id="div_email">
+                  <input type="email" class="" id="emailLogin" aria-describedby="emailHelp" placeholder="Correo Electrónico">
+                  <span class="error-email" id="errorEmail">Correo electrónico no válido</span> 
+                </div>
+
+                <div class="input-password" id="div_password">
+                  <input type="password" class="" id="passwordLogin" placeholder="Contraseña">
+                  <span class="error-pass" id="errorPass">Contraseña no válida</span>
+                </div>
+                <div class="captcha-login">
+                  <img src="./img/login/captcha.png" alt="login">
+                </div>
+               <div class="login1-box">
+                 <button type="submit" id="submitLogin" class="btn-login btn-login1">Ingresar</button>
+               </div>
+
+               <div class="message-login message-login1">
+                 <a href="#">¿Olvidaste la Contraseña?</a>
+               </div>
+              </form>
+        </div>
+    </div>
+  </div>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

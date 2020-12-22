@@ -1,0 +1,466 @@
+
+/*-----  OCULTAR ITEMS DEL PPG-1  -----*/
+.ppg-1{
+    display: grid !important; /* ESTE ES Display:grid */
+}
+.ppg-2{
+    display: none;
+}
+
+.ppg-3{
+    display: none;
+}
+
+
+.btn-ppg{
+    display: block;
+}
+
+.actividades-ppg .actividades{
+    display: block;
+}
+
+
+
+.cargo-ppg{
+    display: block;
+}
+.header-ppg{
+    display: grid;
+    grid-template-areas: 'menu btn stats'
+                        'menu btn stats';
+    margin-top: 40px;
+}
+a{
+    text-decoration: none !important;
+}
+
+.menu-ppg{
+    grid-area: menu;
+    margin-bottom: -20px;
+}
+
+.menu-ppg ul{
+    display: flex;
+}
+.menu-ppg ul li{
+    margin: 0px 10px;
+}
+
+.menu-ppg ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    opacity: 0.7;
+    transition: all 300ms;
+}
+.menu-ppg ul li a:hover{
+    opacity: 1;
+}
+
+.suboptions{
+    display: none;
+    z-index: 10 !important;
+}
+
+.submenu-ppg{
+    z-index: 10 !important;
+    flex-direction: column;
+    position: fixed;
+    font-size: 12px;
+    margin-top: 5px;
+    background: white;
+    padding: 0px;
+    border-radius: 5px;
+}
+.submenu-ppg a{
+    display: block;
+    margin: 5px 0px;
+    transition: all 300ms;
+}
+
+
+/* ----- BOTON DEL CENTRO PPG-1 --- */
+.btn-ppg{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -150px;
+}
+.cargo-ppg{
+    margin-right: 20px;
+}
+.btn-ppg .btn-ppg-section{
+    background: #02B7DC;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 300ms;
+}
+
+.btn-ppg .btn-ppg-section:hover{
+    background: #008fac;
+}
+
+.btn-ppg-section span{
+    display: flex;
+}
+.btn-ppg-section i{
+    margin-top: 2px;
+    margin-right: 5px;
+}
+
+
+
+
+.actividades-ppg{
+    grid-area: stats;
+    display: flex;
+    justify-content: flex-end;    
+}
+
+
+/* ----- ACTIVIDADES DE  PPG-1 --- */
+
+.actividades-ppg{
+    padding: 10px;
+}
+
+.actividades-ppg .actividades{
+    width: 70%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    align-items: flex-end;    
+    font-size: 14px;
+}
+
+.actividades-ppg .actividades .title-actividades-ppg{
+    font-size: 16px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: -20px;
+}
+
+.actividades-ppg .actividades .week{
+    text-align: end;
+}
+
+.actividades-ppg .actividades .week a{
+    color: #2196F3;
+}
+
+.actividades-ppg .actividades .week a svg{
+    position: relative;
+    top: -1 px;
+}
+.actividades-ppg .stats-ppg{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.actividades-ppg .stats-ppg .options .green{
+    margin-bottom: 10px;
+}
+
+.actividades-ppg .stats-ppg .options{
+    align-self: center;
+}
+.stats-ppg .options i{
+    font-size: 20px;
+}
+
+.stats-ppg .options .green i{
+    color: #6EBC7F;
+}
+.stats-ppg .options .red i{
+    color: #F25767;
+}
+
+.cargo-ppg p{
+ display: inline;
+ margin-left: 5px;
+ font-size: 12px;
+}
+
+.cargo-ppg  a{
+    font-weight: bold;
+    color: #02B7DC;
+    transition: all 300ms;   
+}
+
+.cargo-ppg  a:hover{
+    color: #008fac;
+}
+
+/* --- VISTAS DE PPG --- */
+.colors-cards-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors-cards-title .export-view-ppg{
+    margin: 0px 10px;
+    font-size: 14px;
+    color: black;
+}
+.colors-cards-title .export-view-ppg svg{
+    margin-left: 8px;
+}
+.colors-cards-title .export-view-ppg span{
+    position: relative;
+    top: 1px;
+}
+
+.colors-cards-title .options-view-ppg a{
+    margin: 0px 5px;
+}
+.colors-cards-title .options-view-ppg{
+    margin-right: 10px;
+}
+/* ----- CONTENIDO DE LA PAGINA PPG ---- */ 
+
+.ppg-content .ppg-1{
+    display: grid;
+    grid-template-areas: "blue  red  colors";
+    font-size: 14px;
+    gap: 15px;
+    margin-left: 0px;
+}
+
+.blue-cards-content .row, .red-cards-content .row, .colors-cards-content .row{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px #ccc;
+    background: white;
+    font-size: 14px !important;
+}
+
+
+.blue-cards-content .row .col, .red-cards-content .row .col, .colors-cards-content .row .col{
+    margin: 5px 0px;
+}
+.blue-card-header, .red-card-header, .colors-card-header{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-card-header .left{
+    color: #02B7DC;
+}
+.progress-bar-blue-card{
+    background: #02B7DC !important;
+}
+.red-card-header .left{
+    color: #F25767;
+}
+.colors-card-header .left{
+    color: #00278A;   
+}
+.colors-card-header.green-card-header .left{
+    color:  #6EBC7F;
+}
+
+.colors-card-header.green2-card-header .left{
+    color: #7AC8BA;
+}
+.progress-bar-red-card{
+    background: #F25767 !important;
+}
+
+.progress-colors-justify-card{
+    background: #00278A !important;
+}
+
+.progress-colors-green-card{
+    background: #6EBC7F !important;
+}
+
+.progress-colors-green2-card{
+    background: #7AC8BA !important;
+}
+.blue-card-header .right, .red-card-header .right, .colors-card-header .right{
+    color: #505D69;
+}
+.blue-card-header .right .right-options, .red-card-header .right .right-options, .colors-card-header .right .right-options
+{
+    position: relative;
+    top: -8px;
+    left: 10px;
+}
+
+.blue-card-body-title, .red-card-body-title, .colors-card-body-title{
+    margin-top: 20px;
+    font-weight: bold;
+    line-height: 0;
+}
+
+.blue-card-area, .red-card-area, .colors-card-area{
+    line-height: 0;
+}
+
+.blue-card-footer, .red-card-footer, .colors-card-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.blue-card-footer p, .red-card-footer p, .colors-card-footer p{
+color: #505D69;
+}
+
+.red-card-footer i, .blue-card-footer i, .colors-card-footer i{
+    font-size: 22px;
+}
+
+.blue-card-footer .blue-clock{
+    color: #02B7DC;
+}
+
+.red-card-footer .red-cake{
+    color: #F25767;
+}
+
+.colors-card-footer .purple-calendar{
+    color: #00278A;
+}
+.colors-card-footer .green-calendar{
+    color: #6EBC7F;
+}
+
+.colors-card-footer .green-check{
+    color: #6EBC7F;
+}
+.colors-cards-content .row, .blue-cards-content .row, .red-cards-content .row{
+    display: grid;
+    max-height: 600px !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.cbx-ppg{
+    margin-right: -8px !important;
+}
+.cbx-ppg .cbx-ppg-label{
+    margin-left: -5px !important;
+    position: relative;
+    top: 0.5px;
+}
+
+.cbx.cbx-ppg span:first-child:before {
+    background-color: white !important;
+}
+
+.cbx.cbx-ppg:hover span:first-child{
+    border-color:  #6EBC7F;
+}
+
+.ppg .inp-cbx:checked + .cbx span:first-child{
+    background: white;
+    border-color:  #6EBC7F;
+}
+
+.cbx.cbx-ppg span:first-child svg{
+    stroke:  #6EBC7F;
+
+}
+
+
+/* ----///  MODAL PPG 1   ///----- */
+
+.modal-title-ppg{
+    padding-top: 15px;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-title-ppg h3{
+    font-size: 26px;
+    font-weight: bold;
+
+}
+
+.modal.check-ppg{
+    margin-bottom: 20px;
+}
+
+
+.radios-ppg{
+    margin-top: 20px;
+}
+.label-check-ppg input[type='radio']{
+    display: none;
+}
+
+.label-check-ppg {
+    padding-left: 40px;
+    color: #AEAEAE;
+}
+.label-check-ppg .radio-text{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.label-check-ppg  span.radio{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    border: 2px solid #AEAEAE;
+    display: block;
+    position: relative;
+    top:  -22px;
+}
+
+.label-check-ppg span.radio:after{
+    content: "";
+    height: 20px;
+    width: 20px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: #02B7DC;
+    border: 2px solid #02B7DC;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: 200ms ease-in-out 0s;
+}
+
+.label-check-ppg input[type='radio']:checked ~ span.radio:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.label-check-ppg input[type='radio']:checked ~ span{
+    color: black;
+}
+
+.modal-header-ppg div{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding-top: 10px;    
+    background: #02B7DC;
+    padding-bottom: 20px;
+}
+
+
+#modal-ppg{
+    position: absolute;
+    left: -50px;
+    top: -80px;
+    overflow: hidden;
+}
+
+.modal1-ppg-close{
+    position: relative;
+    bottom: 10px;
+    left: 160px;
+    z-index: 20;
+}

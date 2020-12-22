@@ -1,0 +1,74 @@
+
+.ppg-2{
+    margin-top: 80px;
+}
+.ppg-2 .info-control{
+    margin-top: 40px;
+}
+
+.space-ppg2{
+    width: 100px;
+    height: 10px;
+}
+.ppg-2 .cards-ppg2{
+    display: flex;
+}
+
+.rows-ppg2-container{
+height: 400px;
+overflow-y: auto;
+border: 1px solid #ccc;
+}
+
+.cards-ppg2 .blue-card-header label{
+    padding: 0 !important;
+    margin-left: -0px !important;
+    font-size: 13px;
+}
+
+.cards-ppg2 .blue-card-header{
+    margin-bottom: 15px;
+}
+.ppg-2 .card-body .title i{
+ position: relative;
+ left: 20px;
+}
+
+.ppg-2 .btn-liderazgo-box{
+    margin-top: 20px;
+}
+
+.cards-ppg2 .blue-card-header a{
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.cards-ppg2 .card-content-ppg2 .dato-ppg2{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    line-height: 34px
+}
+
+.cards-ppg2 .card-content-ppg2 .dato-ppg2 .name-dato{
+    font-weight: bold;
+}
+
+.cards-ppg2 .card.cards-pendientes-ppg2{
+    margin: 10px 0px;
+}
+
+.ppg-3 .exportar-sect-ppg, .ppg-1 .exportar-sect-ppg, .ppg-2 .exportar-sect-ppg{
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ppg-3 .exportar-sect-ppg  i, .ppg-1 .exportar-sect-ppg i, .ppg-2 .exportar-sect-ppg i{
+    font-size: 18px !important;
+}
+
+.ppg-3 a, .ppg-2 a{
+    margin: 0px 2px;
+}

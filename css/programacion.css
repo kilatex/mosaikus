@@ -1,0 +1,40 @@
+.programacion-steps{
+    display: flex;
+}
+.programacion-steps .card-programacion{
+    margin: 0px 5px;
+}
+.programacion-steps .card-programacion .card{
+    width: 425px;
+    height: 359px;
+}
+
+.programacion-steps .card-programacion .card-header.card-header-programacion-step{
+    padding: 0;
+    text-align: start;
+    padding: 8px 0px;
+    padding-left: 10px;
+    font-size: 13px;
+}
+
+.programacion-steps .card-programacion.step1 .card .card-body{
+    padding: 50px;
+}
+
+.programacion-steps .card-programacion .card .card-body .label-file{
+    font-size: 13px;
+    color: #282828;
+    margin-bottom: 10px;
+}
+.programacion-steps .card-programacion .card .card-body .input-file{
+    padding: 10px 0px;
+}
+
+.programacion-steps .card-programacion .card .card-body  .check-program{
+    color: #282828;
+    margin-top: 100px;
+}
+
+.programacion-steps .card-programacion.programacion-step-locked{
+    opacity: 0.5;
+}

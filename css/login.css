@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+a{
+    text-decoration: none !important;
+}
+
+.wrap{
+    display: flex;
+}
+.bg-login{
+    display: block;
+    width: 50%;
+    height: 800px;
+}
+
+.bg-login1{
+    background-image: url('../img/login/bg-login1.png');
+    background-repeat-x: no-repeat;
+}
+
+.bg-login2{
+    background-image: url('../img/login/bg-login2.png');
+    background-repeat-x: no-repeat;
+}
+
+.bg-login3{
+    background-image: url('../img/login/bg-login3.png');
+    background-repeat-x: no-repeat;
+}
+
+.bg-login4{
+    background-image: url('../img/login/bg-login4.png');
+    background-repeat-x: no-repeat;
+}
+
+.bg-login5{
+    background-image: url('../img/login/bg-login5.png');
+    background-repeat-x: no-repeat;
+}
+
+.contenedor{
+    width: 50%;
+    text-align: center;
+}
+
+.login{
+    padding: 10px;
+}
+
+.error-general, .error-email, .error-pass{
+    display: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+    margin-left: 5px;
+}
+
+.header-login1{
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+
+.header-login1 h1{
+    font-size: 26px;
+    color: #AEAEAE;
+    font-weight: 400;
+}
+.header-login1 p{
+    line-height: 0;
+    font-size: 12px;
+}
+
+.header-login1 p span{
+    color: #02B7DC;
+}
+
+.header-login2, .header-login3{
+    margin-top: 90px;
+    margin-bottom: 180px;
+}
+
+.header-login4, .header-login5{
+    margin-top: 50px;
+    margin-bottom: 220px;
+}
+
+.header-login2 h1, .header-login3 h1, .header-login4 h1, .header-login5 h1{
+    font-size: 32px;
+    font-weight: 300;
+    color: #AEAEAE;
+}
+
+ .login5 .message-container{
+    display: flex;
+    justify-content: center;
+}
+.login5 .covid-message{
+    width: 320px;
+    text-align: justify;
+    line-height: 16px;
+}
+.login5 .covid-message p{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    
+    /* gris */
+    
+    color: #AEAEAE;}
+
+.logo-login1{
+    margin-bottom: 100px;
+}
+
+.input-email, .input-password{
+    margin-bottom: 20px;
+}
+
+.input-email input, .input-password input{
+    outline: none;
+    text-align: center;
+    width: 350px;
+    height: 40px;
+    border: 1px solid #AEAEAE;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.login1 .input-email input:focus, .login1 .input-password input:focus{
+    border: 2px solid #02B7DC;
+}
+
+
+.login2 .input-email input:focus, .login2 .input-password input:focus{
+    border: 2px solid #3b3a8a;
+}
+
+.login3 .input-email input:focus, .login3 .input-password input:focus{
+    border: 2px solid #6EBC7F;
+}
+
+.login4 .input-email input:focus, .login4 .input-password input:focus{
+    border: 2px solid #F25767;
+}
+
+
+
+.btn-login{
+    border: none;
+    width: 350px;
+    height: 45px;
+    border-radius: 30px;
+    padding: 5px;
+    color: white;
+    transition: all 300ms;
+}
+
+.btn-login1{
+    background: #02B7DC;
+}
+
+.btn-login-1:hover{
+    background: #0392af;
+}
+
+.btn-login2{
+    background: #4846A6;
+}
+
+.btn-login2:hover{
+    background: #3b3a8a;
+}
+
+.btn-login3{
+    background: #6EBC7F;
+}
+
+.btn-login3:hover{
+    background: #559262;
+}
+
+.btn-login4{
+    background: #F25767;
+}
+.btn-login4:hover{
+    background: #c44552;
+}
+
+.btn-login5{
+    background: #DC3546;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold
+}
+.btn-login5:hover{
+    background: #ad2936;
+}
+
+.btn-login5-black{
+    width: 256px;
+    background: #02424C;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.btn-login5-black:hover{
+    background: #002f36;
+}
+
+.login-box.access-box{
+    width: 74%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-login{
+    margin-top: 15px;
+}
+
+.message-login a{
+    color: #AEAEAE;
+    transition: all 300ms;
+}
+
+.message-login1 a:hover{
+    color: #02B7DC;
+}
+
+.message-login2 a:hover{
+    color: #4846A6;
+}
+
+.message-login3 a:hover{
+    color: #6EBC7F;
+}
+
+.message-login4 a:hover{
+    color: #F25767;
+}
+
+.captcha-login img{
+    width: 320px;
+    margin-bottom: 20px;
+}
+
+.footer-login{
+    margin-top: 30px;
+}
+
+.footer-login h3{
+    font-size: 24px;
+    line-height: 0;
+    color: #AEAEAE;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.footer-login2 p, .logo-login3 p, .footer-login5 p, .footer-login4 p{
+    color: #AEAEAE;
+}
+
+.footer-login2 p span {
+    color: #4846A6;
+    font-size: 12px;
+}
+
+.footer-login3 p span{
+    color: #6EBC7F;
+    font-size: 12px;
+}
+
+.footer-login4 p span{
+    color: #F25767;
+    font-size: 12px;
+}
+
+.footer-login5{
+    margin-top: 80px;
+}

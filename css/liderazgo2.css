@@ -1,0 +1,190 @@
+.info-control h5{
+    display: inline;
+}
+.info-control{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.info-control .flecha{
+    width: 15px;
+    position: relative;
+    left: 10px;
+}
+
+.liderazgo-2{
+  display: none;
+  grid-template-areas: "actividades pendientes pendientes"
+                        "actividades pendientes pendientes"
+                        "actividades pendientes pendientes";
+}
+
+.vista-2-res{
+    display: none;
+}
+
+.info-control{
+   grid-area: actividades;
+   margin-right: 20px;
+   margin-top: 5px;
+}
+.pendientes-act{
+    grid-area: pendientes;
+
+}
+
+.pendientes-act .row .col-md-4{
+    margin-bottom: 20px;
+}
+
+.pendientes-act .title h3, .ppg-2 .title h3{
+    display: inline;
+}
+.pendientes-act .title, .admin .title, .ppg-2 .title, .ppg-3 .title{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #cccc;
+  margin-bottom: 15px;
+
+}
+.pendientes-act .title .vista-2 a{
+ text-decoration: none;
+}
+.pendientes-act  .todos{
+    color: #02B7DC;
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.pendientes-act  .todos:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    bottom: 0;
+    /*top:-1px;*/
+    left: 0%;
+    border-bottom: 2px solid #02B7DC;
+}
+.info-toggle{
+    margin-top: 10px;
+    position: static;
+}
+
+.cards-pendientes .statistics-items p{
+    line-height: 20px;
+}
+
+.card-toggle{
+    display: none;
+}
+
+.info-toggle .card .card-body a{
+    text-decoration: none;
+    background: #FFFFFF !important;
+    opacity: 1 !important;
+    display: grid;
+    grid-template-areas: "title title title porcent flecha";
+}
+
+.info-toggle .card .card-body .title-card-ver-mas{
+    color: #292929;
+    font-size: 12px;
+    font-weight: bold;
+    grid-area: title;
+    width: 120px;
+    line-height: 15px;
+}
+
+
+.info-toggle .card .card-body .title-card-porcent{
+    text-align: end;
+    font-size: 24px;
+    color:#02B7DC;
+    font-weight: bold;
+    line-height: 15px;
+    grid-area: porcent;
+
+}
+
+
+.info-toggle .card .card-body i{
+    grid-area: flecha;
+    position: relative;
+    left: -12px;
+    color: gray;
+}
+
+.flecha-primera-liderazgo2{
+ left: 8px !important;
+}
+
+.info-toggle .card .card-body  .flecha-medio{
+    left: -14px;
+}
+
+
+@media screen and (max-width: 856px){
+/* ----- OPCIONES DE VISTA RESPONSIVE ----- */
+.liderazgo-2{
+    grid-template-areas: "vista-2-res ." 
+                        "actividades ."
+                        "pendientes .";
+                        margin-left: 5px;
+                    }
+
+.liderazgo-2  .info-control{
+    margin-left: 5px;
+      margin-right: 10px;
+  }
+.liderazgo-2 .pendientes-act .title h3{
+    font-size: 24px;
+    color: #c0c0c0;
+    margin-left: 5px;
+    margin-top: 40px;
+}
+
+
+.title .vista-2{
+   display: none;
+}
+.title .vista-2 a{
+    margin-left: 5px;
+}
+.pantallas{
+height: 0;
+}
+
+.vista-2-res{
+    grid-area: vista-2-res;
+  display: block;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.vista-2-res a{
+  margin-left: 6px;
+}
+
+.info-control .info-1 .title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.liderazgo-2 .cards-pendientes .row{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    max-width: 400px;
+    overflow-x: auto;
+    border: 1px solid #ddd;
+}
+
+.liderazgo-2 .cards-pendientes .row .col-md-4{
+width: 320px!important;
+}
+.liderazgo-2 .todos{
+    margin-left: 5px;
+}
+}

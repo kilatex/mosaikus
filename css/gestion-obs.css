@@ -1,0 +1,183 @@
+
+.container-obs{
+    width: 70%;
+    padding-left: 110px;
+    margin-top: 30px;
+}
+
+.gestion-obs.first{
+    display: flex;
+}
+
+.gestion-obs{
+    display: flex;
+}
+
+.container-obs .card-body div{
+    margin: 20px 0px;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+.check-obs{
+    color:gray;
+}
+
+.input-obs{
+    width: 96.2% !important;
+    height: 30px !important;
+    outline: none;
+    border: 2px solid #ccc !important;
+    border-radius: 5px !important;
+    font-weight: bold;
+}
+
+
+.textaera-obs{
+    width: 96.4% !important;
+    outline: none;
+    border: 2px solid #ccc !important;
+    border-radius: 5px !important;
+}
+
+.container-obs .card-header, .container-obs .card{
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+    border: none;
+}
+
+
+.container-obs .card-header{
+    background: #02B7DC ;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+.container-obs .card-header span.title-transparent{
+    color: #02B7DC;
+}
+ /* ----- RADIO BUTTONS DE GESTION-OBS Y ADM-ACT ----- */
+#elogio-obs, #si-obs, #si2-obs, #si-act, #avance-adm-act{
+    margin-right: 5px;
+}
+
+#desvio-obs, #no-obs, #no2-obs, #no-act, #cierre-adm-act{
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.radio-obs input{
+    position: relative;
+    top: 1px;
+}
+
+.radiobutton-obs{
+    line-height: 0;
+}
+
+.radio-obs label{
+    cursor: pointer;
+}
+
+.input-obs-2{
+    width: 60% !important;
+    height: 30px !important;
+    outline: none;
+    border: 2px solid #ccc !important;
+    border-radius: 5px !important;
+    font-weight: bold;
+    color: gray;
+}
+
+.number-obs{
+    display: block;
+    width: 28% !important;
+    height: 30px !important;
+    outline: none;
+    text-align: center;
+    border: 2px solid #ccc !important;
+    border-radius: 5px !important;
+    font-weight: bold;
+}
+
+.flecha-obs{
+    position: relative;
+    left: -25px;
+    top: -2px;
+}
+.obs-check2{
+    color: black;
+}
+
+.file2-obs{
+    padding: 5px 80px;
+    background: white;
+    border: 2px solid #D6D6D6;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.botones-obs{
+  text-align: center;
+}
+
+.btn-obs{
+    outline: none;
+    border: none;
+    color: white;
+    padding: 5px 45px;
+    border-radius: 10px;
+    margin: 0px 5px;
+   /*  margin-top: 120px; */
+   transition: all 300ms;
+   font-weight: bold;
+}
+
+.btn-obs.btn-obs-save{
+    background: #02B7DC;
+}
+
+.btn-obs.btn-obs-save:hover{
+    background: #0095b3;
+}
+
+.btn-obs.btn-obs-cancel{
+    background: #AEAEAE;
+}
+
+.header-observaciones{
+    background: #02B7DC;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.header-observaciones span{
+    font-weight: bold;
+    color: white;
+    margin-left: 5px;
+}
+
+.textlabel-obs{
+    line-height: 0;
+}
+
+
+.modal-dialog.sss{
+    height: 1800px !important;
+}
+
+.file-obs.obs1 svg{
+    margin-left: -160px !important;
+}
+
+.container-obs .botones-obs button{
+    width: 140px;
+    height: 30px;
+}

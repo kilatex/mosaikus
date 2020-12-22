@@ -1,0 +1,25 @@
+.gestion-obs.adm-act{
+    display: none;
+}
+.input-adm-act{
+    width: 100%;
+}
+
+.input-adm-act svg{
+ margin-right: 10px;
+}
+
+.input-adm-act input[type='date'], .input-adm-act select{
+    border-radius: 10px;
+    outline: none;
+    height: 32px;
+    border: 2px solid #D6D6D6;
+    width: 63%;
+    cursor: pointer;
+}
+
+.botones-adm-act{
+    margin-top: 250px !important;
+    text-align: center;
+}
+

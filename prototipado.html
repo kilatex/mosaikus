@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- GOOGLE FONTS -->
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+     <!-- LATERAL-MENU CSS -->
+     <link rel="stylesheet" href="./css/lateral-menu.css">
+     <!-- MODAL COMPANY CSS -->
+     <link rel="stylesheet" href="./css/modal-company-styles.css">
+  
+     <!-- PROTOTIPADO.CSS -->
+     <link rel="stylesheet" href="./css/prototipado.css">
+     <!-- CUSTOM CSS -->
+     <link rel="stylesheet" href="./css/main.css">
+        <!-- Administrador -->
+        <link rel="stylesheet" href="./css/administrador.css">
+     <!-- Liderazgo -->
+     <link rel="stylesheet" href="./css/liderazgo.css">
+     <!-- Liderazgo 2-->
+     <link rel="stylesheet" href="./css/liderazgo2.css">
+     <!-- Liderazgo 3 -->
+     <link rel="stylesheet" href="./css/liderazgo3.css">
+    <!-- SELECT2 JQUERY STYLES -->
+    <link rel="stylesheet" href="./css/select2/select2.css">
+    <link rel="stylesheet" href="./css/select2/select2.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        
+    <title>Mosaikus</title>
+    <title>Liderazgo Mosaikus</title>
+</head>
+<body>
+    <div class="nav navbar" id="nav">
+        <div class="nav-left">
+            <a href="#" id="interfaces" style="text-decoration: none;">
+                <img src="./img/nav-right-item-1.png" alt="img2" class="nav-item-1">
+            </a>
+            <a href="#" style="text-decoration: none;" data-toggle="modal" data-target="#modal-config">
+                <img src="./img/nav-right-item-2.png" alt="img1" class="nav-item-2">
+            </a>
+        </div> 
+
+        <!-- ///// NAV-CENTER /////-->
+       <div class="nav-center">
+            <img src="./img/rombus-00.png" class="center-logo-rombus" alt="Logo" id="rombusNavImg">
+            <img src="./img/zaldivar-00.png" class="center-logo-zaldivar" alt="Logo" id="zaldivarNavImg">
+        </div>
+
+        <!-- ///// NAV-RIGHT /////-->
+       <div class="nav-right">
+            <span class="nav-item-4">
+                <a id="companyItem" class="user-company" data-toggle="modal" data-target='#modal-company'>
+
+                    <img src="./img/154.png" id="image" alt="Imagen" class="company-item">
+                </a>
+            </span>
+
+            <span class="userr-options">
+
+
+                <button class="btn-options" id="btnNav">
+                    <i id="angles" class=" text-white  fas fa-angle-left"></i></button>
+                <span class="user-options" id="userOptions">
+                    <span>
+
+
+                        <a href="#" id="user-globe" class="user-options-item" data-toggle="modal"
+                            data-target='#modal-globe'><i class="fas fa-globe"></i></a>
+                        <a href="#" id="user-folder" class="user-options-item"><i class="far fa-folder-open"></i></a>
+
+                        <a href="#" id="user-bell" data-toggle="modal" data-target='#modal-bell'
+                            class="user-options-item">
+                            <i class="far fa-bell"></i>
+                            <span class="punto-rojo"></span>
+                        </a>
+                        </a>
+
+                        <a href="#" id="user-info" class="user-options-item"><i class="far fa-question-circle"></i></a>
+                    </span>
+                </span>
+
+                <a href="#" class="user" data-toggle="modal" data-target='#modal-user' id="user">
+                    <i class="far fa-user click-to-modaluser"></i>
+                </a>
+            </span>
+
+            <a href="#" class="item-5">
+                <img src="./img/INTERFAZ/flecha-salida.png" class="nav-item-5" alt="" srcset="">
+            </a>
+        </div> 
+    </div>
+
+    <div class="content">
+        <nav class="main-menu" id="lateral-menu">
+            <ul class="menu-nav">
+                <li>
+                    <a href="#" id="home" class="default-hover logo-main-menu">
+                        <img src="./img/INTERFAZ/logo-MOSAIKUS-WHITE.png" class="nav-item-primary" alt="" srcset="">
+                        <span class="nav-text">
+                            MOSAIKUS
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                       <img src="./img/main-menu-icons/1-documentos.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Documentos
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador De Documentos</a></li>
+                        <li><a href="#">Maestro de Documentos</a></li>
+                        <li><a href="#">Dashboard de Documentos</a></li>
+                        <li><a href="#">Lista de Distribución</a></li>
+                        <li><a href="#" id="config">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Parámetros de Documento</a></li>
+                                <li><a href="#">Parámetro de Formularios</a></li>
+                                <li><a href="#">Migración de Responsibilidades</a></li>
+                                <li><a href="#">Código de Áreas</a></li>
+                                <li><a href="#">Tipos de Documentos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/2-formularios.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Formularios & Registros
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador de Formularios</a></li>
+                        <li><a href="#">Maestro de Formularios</a></li>
+                        <li><a href="#">Maestro de Registros</a></li>
+                    </ul>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/3-ocurrencias.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Ocurrencias
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Ocurrencias con Plan de Acción</a></li>
+                        <li><a href="#">Ocurrencias con Correciones</a></li>
+                        <li><a href="#">Seguimiento de Acciones Correctivas</a></li>
+                        <li><a href="#">Dashboard de Plan de Accion</a></li>
+                        <li><a href="#">Dashboard Correciones</a></li>
+                        <li><a href="#">Dashboard Afecta a Persona</a></li>
+                        <li><a href="#">Dashboard de Resultados</a></li>
+                        <li><a href="#">Dotación y horas hombres</a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/4-competencias.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Competencias Criticas
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Familias</a></li>
+                        <li><a href="#">Listado de Requisitos</a></li>
+                        <li><a href="#">Requisitos de Cargo</a></li>
+                        <li><a href="#">Matriz de Competencias Cricticas</a></li>
+                        <li><a href="#">Dashboard de Competencias Cricticas</a></li>
+                    </ul>
+
+                </li>
+                
+                <li>
+                    <a href="#" class="riesgos-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/5-gestion.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Gestión de Riesgos
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Permisos de Trabajo</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Matriz de Riesgo</a></li>
+                        <li><a href="#">Administrador de Matriz de Riesgo</a></li>
+                        <li><a href="#">Vinculación con Matriz de Riesgo</a></li>
+                        <li><a href="#">Controles Transversales</a></li>
+                        <li><a href="#" id="config">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Listados</a></li>
+                                <li><a href="#">Ámbito</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/6-objetivos.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Objetivos & Programas
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#" id="metas">Objetivos y Metas</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Programación</a></li>
+                                <li><a href="#">Ejecución</a></li>
+                                <li><a href="#">Cumplimiento</a></li>
+                                <li><a href="#">Flujo de Trabajo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="programas">Programas</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Actividades Descriptivas</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                        <li><a href="#">Administrar Actividades Descriptivas Ejecutadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="seguimiento">Seguimiento y Monitoreo</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                        <li><a href="#">Administrar Actividades de Seguimiento & Monitoreo
+                                                Ejecutadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="inspecciones">Inspecciones</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="verificadores">Verificadores Operacionales</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="observaciones">Observaciones</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#" id="reuniones">Reuniones de Equipo</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Listado de Actividades Programadas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dashboard con Actividades Generales</a></li>
+                        <li><a href="#">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Plantillas Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Familias Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Unidades Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Categoría de Actividades</a></li>
+                                <li><a href="#">Subcategoría de Actividades</a></li>
+                                <li><a href="#">Parametros de Actividades</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="inspecciones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/7-inspecciones.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Inspecciones & Verificar Operaciones
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Inspecciones</a></li>
+                        <ul class="subsubMenu" id="subsubSection">
+                            <li><a href="#">Administrador de Inspecciones</a></li>
+                            <li><a href="#">Plantillas</a></li>
+                            <li><a href="#">Dashboard de Inspecciones</a></li>
+                        </ul>
+                        <li><a href="#">Verificadores Operacionales</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Administrador de V.O</a></li>
+                                <li><a href="#">Plantillas</a></li>
+                                <li><a href="#">Dashboard de V.O</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="observaciones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/8-observaciones.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Observaciones
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Gestión de Observaciones</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Categorías</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="reuniones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/9-reuniones.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Reuniones de Equipo
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador de Reuniones</a></li>
+                        <li><a href="#">Compromisos</a></li>
+                        <li><a href="#">Tipos</a></li>
+                        <li><a href="#">Familias</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/10-geolocalizacion.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Geolocalización
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="container-mosaikus">
+            <div class="title-prototipado">
+                <h4>Administrador de Documentos</h4>
+            </div>
+            <div class="search">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="search-bar">
+                            <nav class="navbar">
+                                <form class="form-inline">
+                                    <span class="barra-busqueda">
+                                        <i class="fas fa-search search-prototipado-icon"></i>
+                                        <input class="form-control search-prototipado mr-1" type="search"
+                                            placeholder="Búsqueda Rápida" aria-label="Search">
+                                            <a href="#" class="menu-config-prototipado">
+                                                <i class="fas fa-sliders-h"></i>
+                                         </a>
+                                        <button class="btn  btn-search text-white my-2 my-sm-0" type="submit">Buscar</button>
+                                        
+                                    </span>
+                                   
+                                </form>
+                            </nav>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-5">
+                       
+                        <div class="otros-botones otros-botones-prototipado">
+
+                            <button class="btn btn-prototipado  my-2 my-sm-0" id="btn-filtros" type="submit">Filtro Rápido
+                                <i class="fas fa-align-center btn-icon-custom"></i>  
+                            </button>
+                            <div class="filtros-rapidos">
+                                <div class="opciones">
+                                    <div>
+                                        <input type="checkbox" name="input-1" id="input-1">
+                                        <label for="input-1">Mi FLujo de Trabajo</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-2" id="input-2">
+                                        <label for="input-2">Ocultar Públicos</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-3" id="input-3">
+                                        <label for="input-3">Ocultar Áreas Vinculadas</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-4" id="input-4">
+                                        <label for="input-4">Mi Nivel</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <button class="btn btn-prototipado my-2 my-sm-0" type="submit">Nuevo 
+                                <i class="far fa-file-alt btn-icon-custom"></i>
+                            </button>
+                            <button class="btn btn-prototipado  my-2 my-sm-0" type="submit">Exportar 
+                                <i class="far fa-file-excel btn-icon-export"></i> 
+                            </button>
+                            <button class="btn btn-prototipado  my-2 my-sm-0" id="btn-personalizar" type="submit">Personalizar 
+                                <i class="fab fa-microsoft btn-icon-custom"></i>
+                            </button>
+                            <div class="filtros-personalizar">
+                                <div class="opciones">
+                                    <div>
+                                        <input type="checkbox" name="input-personalizar-1" id="input-personalizar-1">
+                                        <label for="input-personalizar-1">Todos</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-2" id="input-personalizar-2">
+                                        <label for="input-personalizar-2">Dias</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-3" id="input-personalizar-3">
+                                        <label for="input-personalizar-3">Versión</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-4" id="input-personalizar-4">
+                                        <label for="input-personalizar-4">Fecha</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-5" id="input-personalizar-5">
+                                        <label for="input-personalizar-5">Código</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-6" id="input-personalizar-6">
+                                        <label for="input-personalizar-6">Elabora</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-7" id="input-personalizar-7">
+                                        <label for="input-personalizar-7">Aprueba</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-8" id="input-personalizar-8">
+                                        <label for="input-personalizar-8">Revisa</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-9" id="input-personalizar-9">
+                                        <label for="input-personalizar-9">Activo</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-10" id="input-personalizar-10">
+                                        <label for="input-personalizar-10">Revisión</label>
+                                    </div>
+                                    <div>
+
+                                        <input type="checkbox" name="input-personalizar-11" id="input-personalizar-11">
+                                        <label for="input-personalizar-11">Público</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="filtros-prototipado">
+                <p class="filtros-titulo">Filtros Activos</p>
+                <div class="filtros-lista">
+                    <ul>
+                       <a href="#" class="filtro-item"> <li>En Elaboración <i class="fas fa-times"></i></li></a>
+                        <a href="#" class="filtro-item"><li>Si <i class="fas fa-times"></i></li></a>
+                        <a href="#" class="filtro-item"><li>Demo <i class="fas fa-times"></i></li></a>
+                       <a href="#" class="filtro-item"> <li>En Elaboración <i class="fas fa-times"></i></li></a>
+                        <a href="#" class="filtro-item"><li>Si <i class="fas fa-times"></i></li></a>
+                        <a href="#" class="filtro-item"><li>Demo <i class="fas fa-times"></i></li></a>
+                       <a href="#" class="filtro-item"> <li>En Elaboración <i class="fas fa-times"></i></li></a>
+                        <a href="#" class="filtro-item"><li>Si <i class="fas fa-times"></i></li></a>
+                        <a href="#" class="filtro-item"><li>Demo <i class="fas fa-times"></i></li></a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white table-actividades">
+    
+    
+                <table class="table table-prototipado">
+                    <thead>
+                        <tr class="titulos-table-prototipado">
+                            <th class="dias-columna">
+                                <div class="titulo-columna-protitipado">
+                                    <div>DIAS</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="etapa-flujo">
+                                <div class="titulo-columna-protitipado">
+                                    <div class="titulo-columna">ETAPA DE FLUJO DE TRABAJO</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#" class="flecha-arriba"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                                
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>CÓDIGO</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>NOMBRE DOCUMENTO</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>TIPO DE DOCUMENTO</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>ARBOL ORGANIZACIONAL</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>VER  PDF</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>ELABORA</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>REVISA</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>APRUEBA</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>VALIDEZ MESES</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>VERSIÓN</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>FECHA</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="">
+                                <div class="titulo-columna-protitipado">
+                                    <div>REVISIÓN</div>
+                                    <div class="flechas-columna"> 
+                                        <a href="#"><i class="fa fa-angle-up"></i></a>
+                                        <a href="#"><i class="fa fa-angle-down"></i></a>
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td class="">
+                                <input class="inp-cbx " id="cbx-prot-1" type="checkbox" style="display: none" />
+                                <label class="cbx cbx-ppg" for="cbx-prot-1"><span>
+                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                        </svg></span>
+                                    <span class="cbx-prot-label">101</span></label>
+                            </td>
+
+
+                            <td class="id">
+                                <span>Aprobado</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>DMO_0001</span>
+                            </td>
+
+                            <td class="ambito">
+                                <span>Manual SGC</span>
+                            </td>
+                            <td class="tipo-documento">
+                                <span>Manual</span>
+                            </td>
+
+                            <td class="arbol">
+                                <span>Demo</span>
+                            </td>
+
+                            <td class="pdf">
+                                <span><a href="#"><i class="far fa-file-pdf"></i></a></span>
+                            </td>
+
+                            <td class="libre">
+                                <span>Adrian Diaz</span>
+                            </td>
+
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+                            <td class="fecha">
+                                <span>Mario Artudillo</span>
+                            </td>
+
+                            <td class="referencia">
+                                <span>24</span>
+                            </td>
+
+                            <td class="etapa">
+                                <span>01</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>06/03/2020</span>
+                            </td>
+
+                            <td class="contratista">
+                                <span>01</span>
+                            </td>
+
+                        </tr>
+
+
+
+
+                    </tbody>
+                </table>
+
+            </div>
+            
+        
+        </div>
+    </div>
+
+    <!-- MODAL ARBOL -->
+    
+    <script src="./js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="./js/prototipado.js"></script>
+    <!-- FONT AWESOME SCRIPT -->
+    <script src="https://kit.fontawesome.com/f26a62c07c.js" crossorigin="anonymous"></script>
+
+    <!-- SELECT2 JQUERY -->
+    <script src="./js/select2js/select2.full.min.js"></script>
+
+</body>
+</html>

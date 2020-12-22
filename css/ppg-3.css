@@ -1,0 +1,106 @@
+.ppg-3{
+    margin-top: 20px;
+}
+
+.ppg-3 .main-cards{
+    display: flex;
+    justify-content: center;
+}
+
+.ppg-3 .main-cards .main-cards-container{
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+.ppg-3 .title{
+    margin-top: 30px;
+}
+
+.ppg-3 .btn-liderazgo-box{
+    margin-top: 10px;
+}
+
+.ppg-3 .container-ppg3{
+    margin-left: 00px;
+}
+
+.ppg-3 .main-cards-container .col{
+    width: 300px;
+}
+
+.ppg-3 .main-cards-container .card-2-ppg3 p{
+    color: #F25767 !important;
+}
+
+.ppg-3 .main-cards-container .card-3-ppg3 p{
+    color: #6EBC7F !important;
+}
+
+.btn-ppg3{
+    width: 160px;
+    margin-top: 15px;
+    font-size: 14px ;
+   transition: all 300ms !important;
+   border-radius: 10px !important;
+}
+
+.btn-ppg3-nueva{
+    color: #02B7DC !important ;
+    border: 1px solid #02B7DC !important;
+}
+
+.btn-ppg3-nueva:hover{
+    color: white !important;
+    background: #02B7DC;
+}
+
+.btn-ppg3-atrasadas{
+    background: white;
+    color: #F25767 !important ;
+    border: 1px solid #F25767 !important;
+}
+
+.btn-ppg3-atrasadas:hover{
+    background: #F25767;
+    color: white !important;
+}
+
+.ppg-3 .btn-finalizado{
+    background: white;
+    color: #6EBC7F !important;
+    border: 1px solid #6EBC7F !important;
+}
+
+.ppg-3 .btn-finalizado:hover{
+    color: white !important;
+    background: #6EBC7F;
+}
+
+
+.ppg-3 tr .exportar{
+    width: 150px !important;
+}
+.ppg-3 tr .options-ppg a .pdf{
+    margin-left: 0px;
+}
+
+
+.ppg-3 td .inp-cbx {
+    margin: 0px;
+}
+.ppg-3 .id-tabla-ppg3{
+    color: #02B7DC;
+}
+.ppg-3 .id-tabla-ppg3, .cbx-ppg-3-1{
+    cursor: pointer !important;
+    
+
+}
+.ppg-3 .table-ppg3 td{
+    line-height: 28px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* QUITARLE EL BORDER BOTTOM CADA FILA DE LA TABLA */

@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/programar-actividad.css">
+    <!-- GESTION OBSERVACIONES CSS -->
+    <link rel="stylesheet" href="./css/gestion-obs.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./css/lateral-menu.css">
+    <!-- MODAL COMPANY CSS -->
+    <link rel="stylesheet" href="./css/modal-company-styles.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Liderazgo -->
+    <link rel="stylesheet" href="./css/liderazgo.css">
+    <!-- Liderazgo 2-->
+    <link rel="stylesheet" href="./css/liderazgo2.css">
+    <!-- Liderazgo 3 -->
+    <link rel="stylesheet" href="./css/liderazgo3.css">
+    <!-- Administrador -->
+    <link rel="stylesheet" href="./css/administrador.css">
+    <!-- Radio Buttons CSS -->
+    <link rel="stylesheet" href="./css/radiobuttons.css">
+    <!-- PPG 1 CSS -->
+    <link rel="stylesheet" href="./css/ppg.css">
+    <!-- PPG 2 CSS -->
+    <link rel="stylesheet" href="./css/ppg-2.css">
+    <!-- PPG 3 CSS -->
+    <link rel="stylesheet" href="./css/ppg-º3.css">
+    <!-- GESTION OBSERVACIONES CSS -->
+    <link rel="stylesheet" href="./css/gestion-obs.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Programar Actividad</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card-frames">
+            <div class="header-frame">
+                <p>Programar Actividad</p>
+            </div>
+            <div class="container-card-frame">
+                <div class="step1">
+                    <div class="steps-list">
+                        <img src="./img/frames/stepframe1.png" alt="" srcset="">
+                    </div>
+        
+                    <div class="file-obs">
+                        <p class="label-file">Arbol Organizacional</p>
+                        <label for="file-obs" class="input-file">Seleccionar</label>
+                        <input type="file" id="file-obs" class="file-input">
+                    </div>
+    
+                    <div class="check-programar">
+        
+                        <input class="inp-cbx" id="cbx-obs" type="checkbox" style="display: none" />
+                        <label class="cbx" for="cbx-obs"><span>
+                                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                </svg></span>
+                            <span class="obs-check">Requiere Árbol de Procesos</span></label>
+                    </div>
+    
+                    <div class="input-admin">
+                        <label for="input-verif-admin">Ámbito</label>
+                        <select name="verifOpt" id="verifOpt" class="input-obs">
+                            <option value="">Seleccione</option>
+                            <option value="1">Opcion 1</option>
+                            <option value="2">Opcion 2</option>
+                            <option value="3">Opcion 3</option>
+                        </select>
+    
+                        <svg class="flecha-obs" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.27203 4.6374L5.34309 7.56633C4.95257 7.95685 4.3194 7.95685 3.92888 7.56633L0.999947 4.6374" stroke="#AEAEAE" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="actividad-program">
+                        <label for="act-obs">Actividad</label>
+                        <input type="text" class="input-obs" placeholder="Actividad"  name="act-obs" id="act-obs">
+                    </div>
+    
+                    <div class="input-admin">
+                        <label for="input-verif-admin">Categoría</label>
+                        <select name="verifOpt" id="verifOpt" class="input-obs">
+                            <option value="">Seleccione Categoria</option>
+                            <option value="1">Opcion 1</option>
+                            <option value="2">Opcion 2</option>
+                            <option value="3">Opcion 3</option>
+                        </select>
+    
+                        <svg class="flecha-obs" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.27203 4.6374L5.34309 7.56633C4.95257 7.95685 4.3194 7.95685 3.92888 7.56633L0.999947 4.6374" stroke="#AEAEAE" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="input-admin">
+                        <label for="input-verif-admin">Subcategoría</label>
+                        <select name="verifOpt" id="verifOpt" class="input-obs">
+                            <option value="">Seleccione</option>
+                            <option value="1">Opcion 1</option>
+                            <option value="2">Opcion 2</option>
+                            <option value="3">Opcion 3</option>
+                        </select>
+    
+                        <svg class="flecha-obs" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.27203 4.6374L5.34309 7.56633C4.95257 7.95685 4.3194 7.95685 3.92888 7.56633L0.999947 4.6374" stroke="#AEAEAE" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+    
+                    <div class="botones-obs">
+                        <button class="btn-obs btn-obs-cancel">Cancelar</button>
+                        <button class="btn-obs btn-obs-save">Siguiente</button>
+                    </div>
+                </div>
+                
+                <div class="step2">
+                    <div class="steps-list">
+                        <img src="./img/frames/stepframe2.png" alt="" srcset="">
+                    </div>
+        
+                 
+    
+                    <div class="input-program-act">
+                        <svg width="22" height="27" viewBox="0 0 22 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <mask id="path-1-inside-1" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9546 22.9697L20.9547 22.9698L20.9546 22.9573L20.9546 22.9515C20.9546 20.9117 19.7944 19.1888 17.9371 17.9529C16.0774 16.7155 13.562 16.0025 11 16.0025C8.43796 16.0025 5.9225 16.7151 4.06284 17.9524C2.20563 19.1881 1.04543 20.911 1.04543 22.9515V24.4723C1.04543 25.0098 1.48195 25.4463 2.01947 25.4463H19.9805C20.5181 25.4463 20.9546 25.0098 20.9546 24.4723V22.9755L20.9546 22.9697ZM22 22.9573L21.9998 22.9573L22 22.9697L22 22.9755V24.4723C22 25.5871 21.0954 26.4917 19.9805 26.4917H2.01947C0.904574 26.4917 0 25.5871 0 24.4723V22.9515C0 20.4646 1.42598 18.4511 3.48375 17.082C5.53729 15.7157 8.26044 14.957 11 14.957C13.7396 14.957 16.4628 15.7161 18.5163 17.0826C20.574 18.4518 22 20.4653 22 22.9515L22 22.9573Z"/>
+                            </mask>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.9546 22.9697L20.9547 22.9698L20.9546 22.9573L20.9546 22.9515C20.9546 20.9117 19.7944 19.1888 17.9371 17.9529C16.0774 16.7155 13.562 16.0025 11 16.0025C8.43796 16.0025 5.9225 16.7151 4.06284 17.9524C2.20563 19.1881 1.04543 20.911 1.04543 22.9515V24.4723C1.04543 25.0098 1.48195 25.4463 2.01947 25.4463H19.9805C20.5181 25.4463 20.9546 25.0098 20.9546 24.4723V22.9755L20.9546 22.9697ZM22 22.9573L21.9998 22.9573L22 22.9697L22 22.9755V24.4723C22 25.5871 21.0954 26.4917 19.9805 26.4917H2.01947C0.904574 26.4917 0 25.5871 0 24.4723V22.9515C0 20.4646 1.42598 18.4511 3.48375 17.082C5.53729 15.7157 8.26044 14.957 11 14.957C13.7396 14.957 16.4628 15.7161 18.5163 17.0826C20.574 18.4518 22 20.4653 22 22.9515L22 22.9573Z" fill="#AEAEAE"/>
+                            <path d="M20.9547 22.9698L20.8129 41.9692C25.9103 42.0073 30.8091 39.9955 34.4085 36.386C38.0079 32.7765 40.006 27.8721 39.9537 22.7749L20.9547 22.9698ZM20.9546 22.9697L21.0964 3.97028C16.0514 3.93263 11.1986 5.903 7.60789 9.44698C4.01716 12.991 1.98337 17.8175 1.9549 22.8625L20.9546 22.9697ZM20.9546 22.9573L1.9549 23.0645C1.95507 23.0937 1.9553 23.123 1.9556 23.1522L20.9546 22.9573ZM20.9546 22.9515H1.95457C1.95457 22.9873 1.95467 23.023 1.95487 23.0588L20.9546 22.9515ZM17.9371 17.9529L7.41144 33.771L7.41144 33.771L17.9371 17.9529ZM4.06284 17.9524L-6.4618 2.13368L-6.4618 2.13368L4.06284 17.9524ZM20.9546 22.9755L1.95487 22.8683C1.95467 22.904 1.95457 22.9398 1.95457 22.9755H20.9546ZM21.9998 22.9573L22.1375 3.95779C17.0399 3.92085 12.1412 5.93393 8.54254 9.54457C4.94386 13.1552 2.94705 18.0605 3.0009 23.158L21.9998 22.9573ZM22 22.9573L21.8623 41.9568C26.9087 41.9934 31.7624 40.0208 35.3526 36.4742C38.9428 32.9276 40.9746 28.0984 40.9997 23.0519L22 22.9573ZM22 22.9697L40.9997 22.8752C40.9996 22.8398 40.9993 22.8044 40.9989 22.769L22 22.9697ZM22 22.9755H41C41 22.944 40.9999 22.9124 40.9998 22.8809L22 22.9755ZM3.48375 17.082L-7.04089 1.26329L-7.04089 1.26329L3.48375 17.082ZM18.5163 17.0826L7.99059 32.9006L7.9906 32.9006L18.5163 17.0826ZM22 22.9515L40.9998 23.0462C40.9999 23.0146 41 22.9831 41 22.9515H22ZM21.0965 3.97028L21.0964 3.97028L20.8128 41.9692H20.8129L21.0965 3.97028ZM1.9556 23.1522L1.95572 23.1646L39.9537 22.7749L39.9536 22.7624L1.9556 23.1522ZM1.95487 23.0588L1.9549 23.0645L39.9543 22.8501L39.9543 22.8443L1.95487 23.0588ZM7.41144 33.771C5.60396 32.5682 1.95457 29.0053 1.95457 22.9515H39.9546C39.9546 12.8182 33.9848 5.8094 28.4628 2.13492L7.41144 33.771ZM11 35.0025C10.5474 35.0025 10.0825 34.9434 9.57891 34.8015C9.09376 34.6648 8.32973 34.382 7.41144 33.771L28.4628 2.13492C23.0811 -1.4462 16.7911 -2.99754 11 -2.99754V35.0025ZM14.5875 33.7711C13.6687 34.3824 12.9044 34.6652 12.4194 34.8018C11.916 34.9436 11.4516 35.0025 11 35.0025V-2.99754C5.21078 -2.99754 -1.07919 -1.44752 -6.4618 2.13368L14.5875 33.7711ZM20.0454 22.9515C20.0454 29.0033 16.3973 32.567 14.5875 33.7711L-6.4618 2.13368C-11.9861 5.80912 -17.9546 12.8186 -17.9546 22.9515H20.0454ZM20.0454 24.4723V22.9515H-17.9546V24.4723H20.0454ZM2.01947 6.44629C11.9754 6.44629 20.0454 14.5164 20.0454 24.4723H-17.9546C-17.9546 35.5031 -9.0115 44.4463 2.01947 44.4463V6.44629ZM19.9805 6.44629H2.01947V44.4463H19.9805V6.44629ZM1.95457 24.4723C1.95457 14.5165 10.0245 6.44629 19.9805 6.44629V44.4463C31.0116 44.4463 39.9546 35.5031 39.9546 24.4723H1.95457ZM1.95457 22.9755V24.4723H39.9546V22.9755H1.95457ZM1.9549 22.8625L1.95487 22.8683L39.9543 23.0827L39.9543 23.077L1.9549 22.8625ZM21.8622 41.9568H21.8623L22.1376 3.95779L22.1375 3.95779L21.8622 41.9568ZM40.9989 22.769L40.9988 22.7566L3.0009 23.158L3.00103 23.1705L40.9989 22.769ZM40.9998 22.8809L40.9997 22.8752L3.00021 23.0643L3.00024 23.0701L40.9998 22.8809ZM41 24.4723V22.9755H3V24.4723H41ZM19.9805 45.4917C31.5888 45.4917 41 36.0806 41 24.4723H3C3 15.0937 10.602 7.49172 19.9805 7.49172V45.4917ZM2.01947 45.4917H19.9805V7.49172H2.01947V45.4917ZM-19 24.4723C-19 36.0806 -9.58884 45.4917 2.01947 45.4917V7.49172C11.398 7.49172 19 15.0937 19 24.4723H-19ZM-19 22.9515V24.4723H19V22.9515H-19ZM-7.04089 1.26329C-12.7397 5.05488 -19 12.3477 -19 22.9515H19C19 28.5814 15.5917 31.8473 14.0084 32.9007L-7.04089 1.26329ZM11 -4.04297C5.03461 -4.04297 -1.46342 -2.44756 -7.04089 1.26329L14.0084 32.9007C13.1945 33.4422 12.5327 33.6838 12.1351 33.7957C11.7235 33.9117 11.3554 33.957 11 33.957V-4.04297ZM29.042 1.26457C23.4654 -2.44618 16.9674 -4.04297 11 -4.04297V33.957C10.6437 33.957 10.2751 33.9115 9.86329 33.7955C9.46551 33.6835 8.80403 33.4419 7.99059 32.9006L29.042 1.26457ZM41 22.9515C41 12.3472 34.7384 5.05511 29.042 1.26456L7.9906 32.9006C6.40957 31.8486 3 28.5833 3 22.9515H41ZM40.9997 23.0519L40.9998 23.0462L3.00024 22.8569L3.00021 22.8627L40.9997 23.0519Z" fill="#AEAEAE" mask="url(#path-1-inside-1)"/>
+                            <mask id="path-3-inside-2" fill="white">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3266 2.42319C12.4895 0.586182 9.51117 0.586182 7.67416 2.42319C5.83716 4.26019 5.83716 7.23857 7.67416 9.07557C9.51117 10.9126 12.4895 10.9126 14.3266 9.07557C16.1636 7.23857 16.1636 4.26019 14.3266 2.42319ZM6.93493 1.68395C9.1802 -0.561318 12.8205 -0.561318 15.0658 1.68395C17.3111 3.92923 17.3111 7.56953 15.0658 9.81481C12.8205 12.0601 9.1802 12.0601 6.93493 9.81481C4.68966 7.56953 4.68966 3.92923 6.93493 1.68395Z"/>
+                            </mask>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3266 2.42319C12.4895 0.586182 9.51117 0.586182 7.67416 2.42319C5.83716 4.26019 5.83716 7.23857 7.67416 9.07557C9.51117 10.9126 12.4895 10.9126 14.3266 9.07557C16.1636 7.23857 16.1636 4.26019 14.3266 2.42319ZM6.93493 1.68395C9.1802 -0.561318 12.8205 -0.561318 15.0658 1.68395C17.3111 3.92923 17.3111 7.56953 15.0658 9.81481C12.8205 12.0601 9.1802 12.0601 6.93493 9.81481C4.68966 7.56953 4.68966 3.92923 6.93493 1.68395Z" fill="#AEAEAE"/>
+                            <path d="M7.67416 2.42319L-1.51822 -6.7692L-1.51823 -6.7692L7.67416 2.42319ZM14.3266 2.42319L5.13416 11.6156H5.13416L14.3266 2.42319ZM7.67416 9.07557L16.8666 -0.116812L16.8666 -0.116817L7.67416 9.07557ZM14.3266 9.07557L5.13417 -0.116819L5.13416 -0.116812L14.3266 9.07557ZM15.0658 1.68395L24.2582 -7.50843L24.2582 -7.50843L15.0658 1.68395ZM6.93493 1.68395L-2.25746 -7.50843L6.93493 1.68395ZM15.0658 9.81481L24.2582 19.0072L24.2582 19.0072L15.0658 9.81481ZM6.93493 9.81481L-2.25746 19.0072L-2.25746 19.0072L6.93493 9.81481ZM16.8666 11.6156C13.6267 14.8554 8.37397 14.8554 5.13416 11.6156L23.5189 -6.7692C16.6051 -13.683 5.3956 -13.683 -1.51822 -6.7692L16.8666 11.6156ZM16.8666 -0.116817C20.1064 3.123 20.1064 8.37577 16.8666 11.6156L-1.51823 -6.7692C-8.43204 0.14462 -8.43205 11.3541 -1.51822 18.268L16.8666 -0.116817ZM5.13416 -0.116812C8.37397 -3.35662 13.6267 -3.35662 16.8666 -0.116812L-1.51823 18.268C5.3956 25.1818 16.6051 25.1818 23.5189 18.268L5.13416 -0.116812ZM5.13416 11.6156C1.89435 8.37577 1.89435 3.12299 5.13417 -0.116819L23.5189 18.268C30.4328 11.3541 30.4328 0.14462 23.5189 -6.7692L5.13416 11.6156ZM24.2582 -7.50843C16.9361 -14.8305 5.06463 -14.8305 -2.25746 -7.50843L16.1273 10.8763C13.2958 13.7079 8.70494 13.7079 5.8734 10.8763L24.2582 -7.50843ZM24.2582 19.0072C31.5803 11.6851 31.5803 -0.186344 24.2582 -7.50843L5.87339 10.8763C3.04185 8.0448 3.04185 3.45396 5.87339 0.62242L24.2582 19.0072ZM-2.25746 19.0072C5.06463 26.3293 16.9361 26.3293 24.2582 19.0072L5.8734 0.622418C8.70494 -2.20912 13.2958 -2.20912 16.1273 0.622418L-2.25746 19.0072ZM-2.25746 -7.50843C-9.57955 -0.186344 -9.57955 11.6851 -2.25746 19.0072L16.1273 0.622419C18.9589 3.45396 18.9589 8.0448 16.1273 10.8763L-2.25746 -7.50843Z" fill="#AEAEAE" mask="url(#path-3-inside-2)"/>
+                            </svg>
+                            
+                        <select name="verifOpt" id="verifOpt" class="select-program-act">
+                            <option value="" class="locked-adm-act">Responsable</option>
+                            <option value="1">Opcion 1</option>
+                            <option value="2">Opcion 2</option>
+                            <option value="3">Opcion 3</option>
+                        </select>
+                       
+
+                    </div>
+                    
+                    <div class="text-program-act">
+                        <p class="ref-program-act">Entregables</p>
+                        <textarea name="text-admin" id="" cols="25" rows="5" placeholder="Entregables"
+                            class="textaera-obs"></textarea>
+                    </div>
+                    
+                        
+                    <div class="radiobutton-program">
+                        <span>¿Asociado a la Empresa Contratista?</span>
+                        <div class="radio-obs">
+                            <input type="radio" name="optss" id="si-act"><label for="si-act">Si</label>
+                            <input type="radio" name="optss" id="no-act"><label for="no-act">No</label>
+                        </div>
+                    </div>
+
+                    <div class="checkboxs-program">
+
+                        <div class="check-obs">
+                            <input class="inp-cbx" id="cbx-program1" type="checkbox" style="display: none" />
+                            <label class="cbx" for="cbx-program1"><span>
+                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                    </svg></span>
+                                <span class="obs-check">Compliance</span></label>
+                        </div>
+        
+                        <div class="check-obs">
+                            <input class="inp-cbx" id="cbx-program2" type="checkbox" style="display: none" />
+                            <label class="cbx" for="cbx-program2"><span>
+                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                    </svg></span>
+                                <span class="obs-check">Asociar Formulario</span></label>
+                        </div>
+        
+                        <div class="check-obs">
+                            <input class="inp-cbx" id="cbx-program3" type="checkbox" style="display: none" />
+                            <label class="cbx" for="cbx-program3"><span>
+                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                    </svg></span>
+                                <span class="obs-check">Desplazable</span></label>
+                        </div>
+        
+                        <div class="check-obs">
+                            <input class="inp-cbx" id="cbx-program4" type="checkbox" style="display: none" />
+                            <label class="cbx" for="cbx-program4"><span>
+                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                    </svg></span>
+                                <span class="obs-check">Delegable</span></label>
+                        </div>
+        
+                    </div>
+                    <div class="botones-obs">
+                        <button class="btn-obs btn-obs-cancel">Volver</button>
+                        <button class="btn-obs btn-obs-save">Aceptar</button>
+                    </div>
+                </div>
+
+                <div class="step3">
+                    <div class="steps-list">
+                        <img src="./img/frames/stepframe3.png" alt="" srcset="">
+                    </div>
+
+                    <div class="text-program-act">
+                        <p class="ref-program-act">Informacion Complementaria</p>
+                        <textarea name="text-admin" id="" cols="5" rows="3" placeholder="Entregables"
+                            class="textaera-obs"></textarea>
+                    </div>
+                    
+                    <div class="check-obs">
+                        <input class="inp-cbx" id="cbx-program1step3" type="checkbox" style="display: none" />
+                        <label class="cbx" for="cbx-program1step3"><span>
+                                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                </svg></span>
+                            <span class="obs-check">Asociar Recursos</span></label>
+                    </div>
+
+                    <div class="number1-program-act">
+                        <label for="personas-obs">Horas Hombre</label>
+                        <input type="number" placeholder="00" class="number-obs">
+                        <input type="number" placeholder="00" class="number-obs">
+                    </div>
+
+                    <div class="number2-program-act-container">
+                        <div class="number2-program-act">
+
+                        
+                            <div class="check1-number2-program-act">
+                                
+                                <label for="personas-obs">Costo</label>
+                                <input type="number" placeholder="Costo" class="number-obs">
+                            </div>
+                            <div class="select1-number2-program-act">
+
+                                <label for="personas-obs">Moneda</label>
+                                <select name="moneda" id="" clas>
+                                    <option value="">No Asignado</option>
+                                    <option value="1">USD</option>
+                                    <option value="2">EUR</option>
+                                    <option value="3">YEN</option>
+                                </select>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="botones-obs steps-buttons">
+                        <button class="btn-obs btn-obs-cancel">Volver</button>
+                        <button class="btn-obs btn-obs-save">Aceptar</button>
+                    </div>
+                </div>
+
+                <div class="step4">
+                    <div class="steps-list">
+                        <img src="./img/frames/stepframe4.png" alt="" srcset="">
+                    </div>
+                    
+                    <div class="title-step4">
+                        <h5>Programación de Actividad</h5>
+                    </div>
+
+                    <div class="number1-program-act">
+                        <label for="personas-obs">Cantidad</label>
+                        <input type="number" placeholder="1" class="number-obs">
+                    </div>
+
+                    <div class="customs-checks-step4">
+                        <p>Repetición por dias</p>
+                        <div class="radiobuttons">
+                            <form action="" class="radio-form">
+                                <div class="radiobtns">
+                                    <input type="radio" name="opc" id="1">
+                                    <label for="1">Sin Repetición</label>
+                    
+                                    <input type="radio" name="opc" id="2">
+                                    <label for="2">Cada n Dias</label>
+
+                                    <input type="radio" name="opc" id="3">
+                                    <label for="3">Los Dias</label>
+
+                                    <input type="radio" name="opc" id="4">
+                                    <label for="4">Semanal</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="input-date-step4">
+                        <label for="date-step4">Fecha de Inicio</label>
+                        <input type="date" class="date-step4">
+                    </div>
+                    
+                    <div class="ndays-option">
+
+                        <div class="input-repeat-step4 ndays">
+                            <label for="repeat-step4">Repetir cada</label>
+                            <input type="number" placeholder="1" class="number-obs">
+                        </div>
+    
+                        <div class="input-date-step4 ndays">
+                            <label for="date-step4">Hasta</label>
+                            <input type="date" class="date-step4">
+                        </div>
+    
+                        <div class="checks-step4 ndays">
+                            <span>Excluir</span>
+                            <div class="ndays-checks">
+                                <span>
+                                    <input type="checkbox" id="monday-step4">
+                                    <label for="monday-step4">Lun</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="tuesday-step4">
+                                    <label for="tuesday-step4">Mar</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="wednesday-step4">
+                                    <label for="wednesday-step4">Mier</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="thursday-step4">
+                                    <label for="thursday-step4">Jue</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="friday-step4">
+                                    <label for="friday-step4">Vier</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="saturday-step4">
+                                    <label for="saturday-step4">Sab</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="sunday-step4">
+                                    <label for="sunday-step4">Dom</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="semanal-option">
+                        <div class="option-semanal-option">
+                            <div class="input-admin">
+                                <label for="input-verif-admin">Opciones</label>
+                                <select name="verifOpt" id="verifOpt" class="input-obs">
+                                    <option value="">Seleccione</option>
+                                    <option value="1">Opcion 1</option>
+                                    <option value="2">Opcion 2</option>
+                                    <option value="3">Opcion 3</option>
+                                </select>
+            
+                                <svg class="flecha-obs" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.27203 4.6374L5.34309 7.56633C4.95257 7.95685 4.3194 7.95685 3.92888 7.56633L0.999947 4.6374" stroke="#AEAEAE" stroke-linecap="round"/>
+                                </svg>
+                            </div>                            
+                            <div class="input-admin">
+                                <label for="input-verif-admin">Semanas</label>
+                                <select name="verifOpt" id="verifOpt" class="input-obs">
+                                    <option value="">Seleccione</option>
+                                    <option value="1">Cada Semana</option>
+                                    <option value="2">Cada 2 Semanas</option>
+                                    <option value="3">Cada 3 Semanas</option>
+                                    <option value="4">1era Semana de Mes</option>
+                                    <option value="6">2da Semana de Mes</option>
+                                    <option value="7">3era Semana de Mes</option>
+                                    <option value="8">Última Semana de mes</option>
+                                </select>
+            
+                                <svg class="flecha-obs" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.27203 4.6374L5.34309 7.56633C4.95257 7.95685 4.3194 7.95685 3.92888 7.56633L0.999947 4.6374" stroke="#AEAEAE" stroke-linecap="round"/>
+                                </svg>
+                            </div>                            
+                        </div>
+                    </div>
+                    <div class="botones-obs steps-buttons ">
+                        <button class="btn-obs btn-obs-cancel">Volver</button>
+                        <button class="btn-obs btn-obs-save">Aceptar</button>
+                    </div>
+                </div>
+
+                <div class="step5">
+                    <div class="steps-list">
+                        <img src="./img/frames/stepframe5.png" alt="" srcset="">
+                    </div>
+                    <div class="title-step5">
+                        <h4>Acciones Seleccionadas</h4>
+                    </div>
+                    <div class="info-step5">
+                        <p><span>Árbol Organizacional:</span> Árbol Organizacional</p>
+                        <p><span>Requiere Árbol de Proceso:</span> Si</p>
+                        <p><span>Ámbito:</span> X</p>
+                        <p><span>Áctividad:</span> Realizar Ppg de Mosaikus</p>
+                        <p><span>Categoria:</span> Diseño</p>
+                        <p><span>Subcategoria:</span> Pulcritud</p>
+                        <p><span>Entregables:</span> Diseño de ppg para Mosaikus con caracteristicas y funciones</p>
+                        <p><span>Asociado a Empresa Contratista:</span> No</p>
+                        <div class="checkboxs-step5">
+                            <div class="step5-checks">
+
+                                <span>
+                                    <input type="checkbox" id="compliance-step5">
+                                    <label for="compliance-step5">Compliance</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="desplazable-step5">
+                                    <label for="desplazable-step5">Desplazable</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="asociar-step5">
+                                    <label for="asociar-step5">Asociar Formulario</label>
+                                </span>
+
+                                <span>
+                                    <input type="checkbox" id="delegable-step5">
+                                    <label for="delegable-step5">Delegable</label>
+                                </span>
+
+                              
+                            </div>
+                        </div>
+                        <p><span>Responsable:</span> Marcos Salas</p>
+                        <p><span>Recursos Asociados:</span> 48 Horas Hombre 4.500 USD</p>
+                        <p><span>Cantidad de Actividades:</span> 142</p>
+                        <p><span>Programación de Actividades:</span> 3 Actividades para la semana 1 del mes 3 del 2020</p>
+
+                        <div class="notifi-step5">
+                            <input type="checkbox" id="checkNotifyStep5">
+                            <label for="checkNotifyStep5">Notificar</label>
+                        </div>
+                        
+
+
+                    </div>
+                    <div class="botones-obs steps-buttons ">
+                        <button class="btn-obs btn-obs-cancel">Volver</button>
+                        <button class="btn-obs btn-obs-save">Programar</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

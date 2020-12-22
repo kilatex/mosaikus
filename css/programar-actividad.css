@@ -1,0 +1,300 @@
+
+.step0{
+    display: block;
+}
+
+.step1{
+    display: none;
+}
+.step2{
+    display: none;
+}
+.step3{
+    display: none;
+}
+
+.step4{
+    display: none;
+}
+.step5{
+    display: none;
+}
+
+.step0 .modal-title-ppg{
+    margin-top: 20px;
+}
+
+
+
+.card-frames .header-frame{
+    padding-bottom: 1px;
+    padding-top: 10px;   
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
+    background: #02B7DC;
+
+}
+.container-card-frame{
+    padding: 0px 20px;
+}
+.container-card-frame{
+    min-height: 450px !important;
+}
+.steps-list{
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 50px;
+
+}
+
+.steps-list img{
+
+}
+
+.file-obs{
+    text-align: center;
+}
+.file-obs p{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.file-obs .input-file{
+    width: 250px;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.check-programar{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.input-admin select{
+    width: 100%;
+    font-weight: normal;
+
+}
+
+.input-admin{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.actividad-program .input-obs{
+    font-weight: normal;
+    border: 2px solid #D6D6D6;
+}
+
+.botones-obs .btn-obs{
+    padding: 0;
+    padding: 1px 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-program-act .select-program-act{
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 2px solid  #D6D6D6;
+}
+
+.text-program-act{
+    margin-top: 20px;
+}
+
+.text-program-act .ref-program-act{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.checkboxs-program{
+    margin: 20px 0px;
+}
+.checkboxs-program .check-obs{
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.step3 .check-obs{
+    margin-top: 20px;
+    color: black;
+}
+
+.number1-program-act, .number2-program-act{
+    margin-top: 20px;
+}
+
+.number1-program-act label{
+    display: block;
+}
+
+.number1-program-act .number-obs, .input-repeat-step4 .number-obs{
+    display: inline-block;
+    width: 50px !important;
+    font-size: 14px;
+}
+.number2-program-act-container{
+    width: 40%;
+}
+.number2-program-act .check1-number2-program-act{
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 0;
+    width: 50px;
+}
+.number2-program-act .check1-number2-program-act .number-obs{
+    width: 100px !important;
+    font-size: 14px;
+    text-align: center;
+ 
+}
+.check1-number2-program-act{
+    margin-right: 10px !important;
+}
+.number2-program-act .select1-number2-program-act{
+   float: right;
+   width: 50px;
+}
+
+.number2-program-act .select1-number2-program-act .number-obs{
+    width: 50px !important;
+}
+
+.select1-number2-program-act select{
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid #D6D6D6;
+    font-size: 14px;
+    color: #7c7b7b;
+    outline: none;
+}
+
+.steps-buttons{
+    margin-top: 20px;
+}
+
+.customs-checks-step4{
+    margin-top: 30px;
+}
+.customs-checks-step4 p{
+    margin-bottom: 0;
+}
+
+.customs-checks-step4 .radiobuttons .radiobtns label{
+    font-size: 14px !important;
+}
+
+.customs-checks-step4 .radiobuttons .radiobtns {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.input-date-step4{
+    margin-top: 5px;
+}
+
+.input-date-step4 .date-step4{
+    display: block;
+    outline: none;
+    width: 140px;
+    border-radius: 5px;
+    border: 2px solid #aeaeae;
+    font-size: 14px;
+    color: #7c7b7b;
+}
+
+.input-repeat-step4 label{
+    display: block;
+}
+
+.input-repeat-step4{
+    margin-top: 20px;
+}
+
+.ndays{
+    margin: 10px 0px;
+}
+
+.checks-step4.ndays .ndays-checks span{
+    margin: 2px 5px;
+
+}
+
+
+.checks-step4.ndays .ndays-checks span label{
+    cursor: pointer;
+    font-size: 14px;
+    color: #C0C0C0;
+}
+
+/* OPCIONES DE REPETICION POR DIAS */
+.ndays-option{
+    display: none;
+}
+
+.option-semanal-option label{
+    display: inline-block;
+    float: left;
+    margin-right: 10px;
+    font-size: 14px;
+    position: relative;
+    top: 5px;
+}
+.option-semanal-option select{
+    width: 150px !important;
+    display: inline-block;
+    float: left;
+    cursor: pointer;
+}
+
+.option-semanal-option{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-semanal-option .input-admin svg{
+    left: -15px;
+    top: 1px;
+    cursor: pointer;
+}
+
+
+/* ESTILOS DEL PASO 5 */
+
+.title-step5{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.checkboxs-step5{
+    margin: 10px 0px;
+}
+.checkboxs-step5 .step5-checks span{
+    margin-right: 50px;
+    color: #7c7b7b;
+}
+.info-step5{
+    margin: 20px 0px;
+}
+.info-step5 p{
+    line-height: 18px;
+    font-size: 14px;
+    color: gray;
+}
+
+.info-step5 p span{
+    color: #282828;
+}
+.notifi-step5 label{
+    cursor: pointer;
+}
+
+
+.input-semanal-option option{
+    color: white !important;
+}

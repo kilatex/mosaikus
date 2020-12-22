@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- LATERAL-MENU CSS -->
+    <link rel="stylesheet" href="./css/lateral-menu.css">
+    <!-- MODAL COMPANY CSS -->
+    <link rel="stylesheet" href="./css/modal-company-styles.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Radio Buttons CSS -->
+    <link rel="stylesheet" href="./css/radiobuttons.css">
+    <!-- PPG 1 CSS -->
+    <link rel="stylesheet" href="./css/ppg.css">
+    <!-- PPG 2 CSS -->
+    <link rel="stylesheet" href="./css/ppg-2.css">
+    <!-- PPG 3 CSS -->
+    <link rel="stylesheet" href="./css/ppg-3.css">
+    <!-- GESTION OBSERVACIONES CSS -->
+    <link rel="stylesheet" href="./css/gestion-obs.css">
+    <!-- ADMINISTRAR ACTIVIDADES CSS -->
+    <link rel="stylesheet" href="./css/adm-act.css">
+
+    <!-- ADMINISTRAR ACTIVIDADES CSS -->
+    <link rel="stylesheet" href="./css/programacion.css">
+
+    <!-- SELECT2 JQUERY STYLES -->
+    <link rel="stylesheet" href="./css/select2/select2.css">
+    <link rel="stylesheet" href="./css/select2/select2.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Mosaikus</title>
+</head>
+
+<body>
+
+
+    <div class="nav navbar" id="nav">
+
+
+       <div class="nav-left">
+            <a href="#" id="interfaces" style="text-decoration: none;">
+                <img src="./img/nav-right-item-1.png" alt="img2" class="nav-item-1">
+            </a>
+            <a href="#" style="text-decoration: none;" data-toggle="modal" data-target="#modal-config">
+                <img src="./img/nav-right-item-2.png" alt="img1" class="nav-item-2">
+            </a>
+        </div> 
+
+        <!-- ///// NAV-CENTER /////-->
+       <div class="nav-center">
+            <img src="./img/rombus-00.png" class="center-logo-rombus" alt="Logo" id="rombusNavImg">
+            <img src="./img/zaldivar-00.png" class="center-logo-zaldivar" alt="Logo" id="zaldivarNavImg">
+        </div>
+
+        <!-- ///// NAV-RIGHT /////-->
+       <div class="nav-right">
+            <span class="nav-item-4">
+                <a id="companyItem" class="user-company" data-toggle="modal" data-target='#modal-company'>
+
+                    <img src="./img/154.png" id="image" alt="Imagen" class="company-item">
+                </a>
+            </span>
+
+            <span class="userr-options">
+
+
+                <button class="btn-options" id="btnNav">
+                    <i id="angles" class=" text-white  fas fa-angle-left"></i></button>
+                <span class="user-options" id="userOptions">
+                    <span>
+
+
+                        <a href="#" id="user-globe" class="user-options-item" data-toggle="modal"
+                            data-target='#modal-globe'><i class="fas fa-globe"></i></a>
+                        <a href="#" id="user-folder" class="user-options-item"><i class="far fa-folder-open"></i></a>
+
+                        <a href="#" id="user-bell" data-toggle="modal" data-target='#modal-bell'
+                            class="user-options-item">
+                            <i class="far fa-bell"></i>
+                            <span class="punto-rojo"></span>
+                        </a>
+                        </a>
+
+                        <a href="#" id="user-info" class="user-options-item"><i class="far fa-question-circle"></i></a>
+                    </span>
+                </span>
+
+                <a href="#" class="user" data-toggle="modal" data-target='#modal-user' id="user">
+                    <i class="far fa-user click-to-modaluser"></i>
+                </a>
+            </span>
+
+            <a href="#" class="item-5">
+                <img src="./img/INTERFAZ/flecha-salida.png" class="nav-item-5" alt="" srcset="">
+            </a>
+        </div> 
+    </div>
+
+    <div class="content">
+
+        <!-- ///// LATERAL-MENU /////-->
+        <nav class="main-menu" id="lateral-menu">
+            <ul class="menu-nav">
+                <li>
+                    <a href="#" id="home" class="default-hover logo-main-menu">
+                        <img src="./img/INTERFAZ/logo-MOSAIKUS-WHITE.png" class="nav-item-primary" alt="" srcset="">
+                        <span class="nav-text">
+                            MOSAIKUS
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                       <img src="./img/main-menu-icons/1-documentos.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Documentos
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador De Documentos</a></li>
+                        <li><a href="#">Maestro de Documentos</a></li>
+                        <li><a href="#">Dashboard de Documentos</a></li>
+                        <li><a href="#">Lista de Distribución</a></li>
+                        <li><a href="#" id="config">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Parámetros de Documento</a></li>
+                                <li><a href="#">Parámetro de Formularios</a></li>
+                                <li><a href="#">Migración de Responsibilidades</a></li>
+                                <li><a href="#">Código de Áreas</a></li>
+                                <li><a href="#">Tipos de Documentos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/2-formularios.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Formularios & Registros
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador de Formularios</a></li>
+                        <li><a href="#">Maestro de Formularios</a></li>
+                        <li><a href="#">Maestro de Registros</a></li>
+                    </ul>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/3-ocurrencias.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Ocurrencias
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Ocurrencias con Plan de Acción</a></li>
+                        <li><a href="#">Ocurrencias con Correciones</a></li>
+                        <li><a href="#">Seguimiento de Acciones Correctivas</a></li>
+                        <li><a href="#">Dashboard de Plan de Accion</a></li>
+                        <li><a href="#">Dashboard Correciones</a></li>
+                        <li><a href="#">Dashboard Afecta a Persona</a></li>
+                        <li><a href="#">Dashboard de Resultados</a></li>
+                        <li><a href="#">Dotación y horas hombres</a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/4-competencias.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Competencias Criticas
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Familias</a></li>
+                        <li><a href="#">Listado de Requisitos</a></li>
+                        <li><a href="#">Requisitos de Cargo</a></li>
+                        <li><a href="#">Matriz de Competencias Cricticas</a></li>
+                        <li><a href="#">Dashboard de Competencias Cricticas</a></li>
+                    </ul>
+
+                </li>
+                
+                <li>
+                    <a href="#" class="riesgos-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/5-gestion.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Gestión de Riesgos
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Permisos de Trabajo</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Matriz de Riesgo</a></li>
+                        <li><a href="#">Administrador de Matriz de Riesgo</a></li>
+                        <li><a href="#">Vinculación con Matriz de Riesgo</a></li>
+                        <li><a href="#">Controles Transversales</a></li>
+                        <li><a href="#" id="config">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Listados</a></li>
+                                <li><a href="#">Ámbito</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/6-objetivos.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Objetivos & Programas
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#" id="metas">Objetivos y Metas</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Programación</a></li>
+                                <li><a href="#">Ejecución</a></li>
+                                <li><a href="#">Cumplimiento</a></li>
+                                <li><a href="#">Flujo de Trabajo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="programas">Programas</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Actividades Descriptivas</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                        <li><a href="#">Administrar Actividades Descriptivas Ejecutadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="seguimiento">Seguimiento y Monitoreo</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                        <li><a href="#">Administrar Actividades de Seguimiento & Monitoreo
+                                                Ejecutadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="inspecciones">Inspecciones</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="verificadores">Verificadores Operacionales</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="observaciones">Observaciones</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#" id="reuniones">Reuniones de Equipo</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Listado de Actividades Programadas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dashboard con Actividades Generales</a></li>
+                        <li><a href="#">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Plantillas Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Familias Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Unidades Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Categoría de Actividades</a></li>
+                                <li><a href="#">Subcategoría de Actividades</a></li>
+                                <li><a href="#">Parametros de Actividades</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="inspecciones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/7-inspecciones.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Inspecciones & Verificar Operaciones
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Inspecciones</a></li>
+                        <ul class="subsubMenu" id="subsubSection">
+                            <li><a href="#">Administrador de Inspecciones</a></li>
+                            <li><a href="#">Plantillas</a></li>
+                            <li><a href="#">Dashboard de Inspecciones</a></li>
+                        </ul>
+                        <li><a href="#">Verificadores Operacionales</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Administrador de V.O</a></li>
+                                <li><a href="#">Plantillas</a></li>
+                                <li><a href="#">Dashboard de V.O</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="observaciones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/8-observaciones.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Observaciones
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Gestión de Observaciones</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Categorías</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="reuniones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/9-reuniones.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Reuniones de Equipo
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador de Reuniones</a></li>
+                        <li><a href="#">Compromisos</a></li>
+                        <li><a href="#">Tipos</a></li>
+                        <li><a href="#">Familias</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/10-geolocalizacion.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Geolocalización
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ///// CONTENT /////-->
+        <div class="container-mosaikus">
+
+            <div class="cards">
+                <div class="card-item">
+                    <div class="card-circles">
+                        <img src="./img/INTERFAZ/1-puntos-objetivos.png" class="" alt="" srcset="">
+                    </div>
+                    <div class="card-text">
+                        Objetivos y Programas
+
+                    </div>
+                    <div class="card-circle-item">
+                        <i class="fas fa-bullseye circle-item icon-objetivos"></i>
+                    </div>
+
+
+                </div>
+
+                <div class="card-item">
+                    <div class="card-circles">
+                        <svg width="60" height="4" viewBox="0 0 60 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <p>Gestión de Riesgos</p>
+                    </div>
+                    <div class="card-circle-item">
+                        <i class="fas fa-shield-alt circle-item icon-gestion"></i>
+
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-circles">
+                        <img src="./img/INTERFAZ/3-puntos-reuniones.png" class="" alt="" srcset="">
+                    </div>
+                    <div class="card-text">
+                        <p>Reuniones de Equipo</p>
+                    </div>
+                    <div class="card-circle-item">
+                        <i class="fas fa-user-friends circle-item icon-reuniones"></i>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-circles">
+                        <img src="./img/INTERFAZ/4-puntos-observaciones.png" class="" alt="" srcset="">
+                        </svg>
+                    </div>
+                    <div class="card-text">
+                        <p>Observaciones</p>
+                    </div>
+                    <div class="card-circle-item">
+                        <i class="far fa-eye circle-item icon-observaciones"></i>
+                    </div>
+                </div>
+
+                <div class="card-item">
+                    <div class="card-circles">
+                        <img src="./img/INTERFAZ/5-puntos-inspecciones.png" class="" alt="" srcset="">
+                    </div>
+                    <div class="card-text">Inspecciones & Verif. Operac.</div>
+                    <div class="card-circle-item">
+                        <i class="fas fa-address-book circle-item icon-inspecciones"></i>
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+    </div>
+
+    </div>
+
+    <!-- ///// MODALS /////-->
+
+
+    <!-- ///// MODAL CONFIG/////-->
+    <div class="modal fade show" tabindex="-1" id="modal-config">
+        <div class="modal-config modal-dialog modal-lg">
+            <div class="modal-content configs-user">
+                <div class="modal-config-header">
+                    <span class="">Configuraciones</span>
+                    <hr>
+                </div>
+                <div class="modal-body options-config">
+                    <ul class="list-options-config">
+                        <li><a href="#" id="link-my-user" class="config-active">Mi Usuario</a></li>
+                        <li><a href="#" id="link-general">General</a></li>
+                        <li><a href="#" id="link-interface">Personalizar Interfaz</a></li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <div class="config-my-user">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="name">Nombre Y Apellidos</label>
+                                    <input type="text"  class="form-control input-config-my-user"
+                                        placeholder="Nombre y Apellidos" required>
+                                </div>
+                                <div class="col col-responsive-one"></div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="date-expiration">Fecha de Expiración</label>
+                                    <input type="date" class="form-control input-config-my-user" required>
+                                </div>
+                                <div class="col">
+                                    <label for="name">Nueva Contraseña</label>
+                                    <input type="password" class="form-control input-config-my-user"
+                                        placeholder="Nueva Contraseña" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="date-expiration">Email</label>
+                                    <input type="email" class="form-control input-config-my-user" required
+                                        placeholder="Email">
+                                </div>
+                                <div class="col">
+                                    <label for="name">Confirmar Contraseña</label>
+                                    <input type="password" class="form-control input-config-my-user"
+                                        placeholder="Confirmar Contraseña" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <label for="name">Contraseña Actual</label>
+                                    <input type="password" class="form-control input-config-my-user"
+                                        placeholder="Contraseña Actual" required>
+                                </div>
+                                <div class="col"></div>
+                            </div>
+                            <div class="form-row btns-config-user">
+                                <div class="col">
+                                    <button class="modal-btn-save btn btn-save-user btn-block" id="save-my-user"
+                                        data-dismiss="modal">Guardar</button>
+                                </div>
+
+                                <div class="col">
+                                    <button class="modal-btn-cancel btn-save-user sss btn btn-block" id="cancel-my-user"
+                                        data-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                            <div class="warning-msg">
+                                
+                                <span class="warning">Al continuar en nuestra plataforma estás confirmando que aceptas
+                                    nuestros <a href="#">términos de uso y política de privacidad</a></span>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="config-general">
+                        <form>
+                            <div class="form-row languaje-select">
+                                <div class="col">
+                                    <label for="languaje">Idioma</label>
+                                    <select class="form-control" id="selectLanguajes" name="languajes">
+                                        <option value="spanish">Español</option>
+                                        <option value="english">English</option>
+                                    </select>
+                                </div>
+                                <div class="col col-responsive-none"></div>
+                            </div>
+                            <div class="form-row responsive-margin">
+                                <div class="col">
+                                    <label for="notifications" class="notifications">Recibe notificaciones al correo
+                                        electrónico</label>
+                                    <input type="checkbox" id="notifications" class="checkbox-notifications">
+                                </div>
+                                <div class="col-sm-1"></div>
+                            </div>
+                            <div class="form-row btn-general">
+                                <div class="col">
+                                    <button class="modal-btn-save btn btn-block  " id="save-general"
+                                        data-dismiss="modal">Guardar</button>
+                                </div>
+                                <div class="space">&nbsp;</div>
+                                <span class="col">
+                                    <button class="modal-btn-cancel btn btn-block" id="cancel-general"
+                                        data-dismiss="modal">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="config-interface">
+                        <form>
+                            <div class="form-row interface">
+                                <div class="col">
+                                    <span>Especialista</span>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="radio" id="classicViewEsp" class="options-views" name="classic">
+                                    <label for="classicViewEsp">Vista Clásica</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" id="customViewEsp"  class="options-views" name="custom">
+                                    <label for="customViewEsp">Vista Personalizada</label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <span>Portal</span>
+                                </div>
+                            </div>
+                            <div class="form-row responsive-margin">
+                                <div class="col">
+                                    <input type="radio" id="classicViewPortal" class="options-views" name="classic">
+                                    <label for="classicViewPortal">Vista Clásica</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" id="customViewPortal" class="options-views" name="custom">
+                                    <label for="customViewPortal">Vista Personalizada</label>
+                                </div>
+                            </div>
+                            <div class="form-row btn-interface">
+                                <div class="col">
+                                    <button class="modal-btn-save btn  btn-block" id="save-interface"
+                                        data-dismiss="modal">Guardar</button>
+                                </div>
+                                <div class="space">&nbsp;</div>
+                                <div class="col">
+                                    <button class="modal-btn-cancel btn btn-block" id="cancel-interface"
+                                        data-dismiss="modal">Cancelar</button>
+                                </div>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <!-- ///// MODAL PROFILE /////-->
+    <div class="modal fade show" tabindex='-1' id="modal-globe">
+        <div class="modal-dialog modal-company-responsive" style="width:400px; border-radius: 25px;">
+            <div class="modal-content">
+                <div class="modal-company-title">
+                    Selecciona un Idioma
+                </div>
+                <div class="modal-body">
+                    <div class="inputGroup">
+                        <input id="spanish" name="option1" class="optionZaldivar" type="checkbox" />
+                        <label for="spanish"><img src="./img/spanish.png" class="img-languaje" alt="img-spanish"><span
+                                class="lang">Español</span></label>
+                    </div>
+                    <div class="inputGroup">
+                        <input id="english" name="option2" class="optionRombus" type="checkbox" />
+                        <label for="english"><img src="./img/english.png" class="img-languaje" alt="img-english"><span
+                                class="lang">Ingles</span></label>
+                    </div>
+                </div>
+
+
+                <button class="modal-btn btn btn-lg" id="languaje-confirm" data-dismiss="modal">Listo</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ///// MODAL USER /////-->
+    <div class="modal fade show" tabindex="-1" id="modal-user">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+            <div class="modal-content"  style="background: white !important;">
+                <div class="modal-header">
+                    <!-- CONFIG ICON -->
+                    <a href="#">
+                    <img src="./img/INTERFAZ/config-icon.png" alt="">
+                    </a>
+                    <!-- LOGOUT ICON -->
+                    <a href="#">
+                        <img src="./img/INTERFAZ/flecha-salida.png" alt="" srcset="">
+                    </a>
+
+                </div>
+                <div class="modal-body">
+                    <!-- USER PROFILE  -->
+                    <span class="modal-user-profile-img">
+                        <img src="./img/INTERFAZ/profile-img.png" alt="">
+
+                    </span>
+
+
+                    <h3 class="font-weight-bolder d-flex justify-content-center">Juan Pérez</h3>
+                    <p class="d-flex justify-content-center">Consultor Externo</p>
+
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show" tabindex="-1" id="modal-arbol">
+        <div class="modal-dialog modal-arbol modal-dialog-centered" style="width: 500px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- CONFIG ICON -->
+                    <h4>Arbol Organizacional</h4>
+
+                </div>
+                <div class="modal-body">
+
+                    <div class="modal-arbol-search-bar">
+                        <nav class="navbar">
+                            <form class="form-inline">
+                                <input class=" modal-arbol-search" type="search" placeholder="Filtrar Listado"
+                                    aria-label="Search">
+                                <button class="btn btn-outline-secondary my-2 my-sm-0 modal-arbol-input"
+                                    type="submit">Buscar</button>
+                            </form>
+                        </nav>
+                    </div>
+
+                    <div class="modal-arbol-lista">
+                        <a href="#">Arbol Organizacional</a>
+                        <ul class="modal-arbol-ul">
+                            <li><a href="#"><i class="far fa-folder"></i>Demo</a>
+                                <ul class="modal-arbol-ul-demo">
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia y Administración</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>FPC</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia de Operaciones</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>MUTUAL</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia Cadena de Suministros</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia TI</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia Diseño y Comunicaciones</a>
+                                    </li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia Comercial</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia Recursos Humanos</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Gerencia Legal</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>Prevención</a></li>
+                                    <li><a href="#"><i class="far fa-folder"></i>MS High Services</a></li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ///// MODAL BELL /////-->
+    <div class="modal fade show" tabindex="-1" id="modal-bell">
+        <div class="modal-dialog modal-sm ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="bell-title">Notificaciones</span>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-item">
+                        <img src="./img/Group 141.png" alt="IMG" class="modal-item-img">
+                        <a href="#">
+                            <h5 class="modal-item-text">Inspeccion Atrasada</h5>
+                        </a>
+                        <span class="modal-item-time">Hace 5 Minutos</span>
+                    </div>
+                    <div class="modal-item">
+                        <img src="./img/Group 141.png" alt="IMG" class="modal-item-img">
+                        <a href="#">
+                            <h5 class="modal-item-text">Inspeccion Atrasada</h5>
+                        </a>
+                        <span class="modal-item-time">Hace 5 Minutos</span>
+                    </div>
+                    <div class="modal-item">
+                        <img src="./img/Group 141.png" alt="IMG" class="modal-item-img">
+                        <a href="#">
+                            <h5 class="modal-item-text">Inspeccion Atrasada</h5>
+                        </a>
+                        <span class="modal-item-time">Hace 5 Minutos</span>
+                    </div>
+                    <div class="modal-item">
+                        <img src="./img/Group 141.png" alt="IMG" class="modal-item-img">
+                        <a href="#">
+                            <h5 class="modal-item-text">Inspeccion Atrasada</h5>
+                        </a>
+                        <span class="modal-item-time">Hace 5 Minutos</span>
+                    </div>
+                </div>
+
+                <button class="modal-btn btn btn-block btn-lg">Ver Historial</button>
+
+            </div>
+        </div>
+    </div>
+
+    <!--///// MODAL COMPANY /////-->
+    <div class=" modal fade show" tabindex="-1" id="modal-company">
+        <div class="modal-dialog modal-company-responsive" style="width:1200px; border-radius: 25px;">
+            <div class="modal-content">
+                <div class="modal-company-title">
+                    Elige a continuación una compañia disponible
+                </div>
+                <div class="modal-body">
+                    <div class="inputGroup">
+                        <input id="option1" name="option1" class="optionZaldivar" type="checkbox" />
+                        <label for="option1"><img src="./img/zaldivar-01.png" class="img-company"
+                                alt="img-zaldivar"><span>Zaldivar</span></label>
+                    </div>
+                    <div class="inputGroup">
+                        <input id="option2" name="option2" class="optionRombus" type="checkbox" />
+                        <label for="option2"><img src="./img/rombus-01.png" class="img-company"
+                                alt="img-zaldivar"><span>Rombus</span></label>
+                    </div>
+                </div>
+
+
+                <button class="modal-btn btn btn-lg" id="company-confirm" data-dismiss="modal">Listo</button>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+    <!-- JQUERY, POPPER AND BOOTSTRAP SCRIPTS -->
+    <script src="./js/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="./js/main.js"></script>
+    <!-- FONT AWESOME SCRIPT -->
+    <script src="https://kit.fontawesome.com/f26a62c07c.js" crossorigin="anonymous"></script>
+
+    <!-- SELECT2 JQUERY -->
+    <script src="./js/select2js/select2.full.min.js"></script>
+
+</body>
+
+</html>

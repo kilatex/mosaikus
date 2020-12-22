@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- GOOGLE FONTS -->
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+       <!-- LATERAL-MENU CSS -->
+       <link rel="stylesheet" href="./css/lateral-menu.css">
+       <!-- MODAL COMPANY CSS -->
+      <link rel="stylesheet" href="./css/modal-company-styles.css">
+       <!-- CUSTOM CSS -->
+       <link rel="stylesheet" href="./css/main.css">
+      <!-- Administrador -->
+      <link rel="stylesheet" href="./css/administrador.css">
+      <!-- Radio Buttons CSS -->
+      <link rel="stylesheet" href="./css/radiobuttons.css">
+        <!-- SELECT2 JQUERY STYLES -->
+        <link rel="stylesheet" href="./css/select2/select2.css">
+        <link rel="stylesheet" href="./css/select2/select2.min.css">
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Administracion Mosaikus</title>
+</head>
+<body>
+    <div class="nav navbar" id="nav">
+        <div class="nav-left">
+            <a href="#" id="interfaces" style="text-decoration: none;">
+                <img src="./img/nav-right-item-1.png" alt="img2" class="nav-item-1">
+            </a>
+            <a href="#" style="text-decoration: none;" data-toggle="modal" data-target="#modal-config">
+                <img src="./img/nav-right-item-2.png" alt="img1" class="nav-item-2">
+            </a>
+        </div> 
+
+        <!-- ///// NAV-CENTER /////-->
+       <div class="nav-center">
+            <img src="./img/rombus-00.png" class="center-logo-rombus" alt="Logo" id="rombusNavImg">
+            <img src="./img/zaldivar-00.png" class="center-logo-zaldivar" alt="Logo" id="zaldivarNavImg">
+        </div>
+
+        <!-- ///// NAV-RIGHT /////-->
+       <div class="nav-right">
+            <span class="nav-item-4">
+                <a id="companyItem" class="user-company" data-toggle="modal" data-target='#modal-company'>
+
+                    <img src="./img/154.png" id="image" alt="Imagen" class="company-item">
+                </a>
+            </span>
+
+            <span class="userr-options">
+
+
+                <button class="btn-options" id="btnNav">
+                    <i id="angles" class=" text-white  fas fa-angle-left"></i></button>
+                <span class="user-options" id="userOptions">
+                    <span>
+
+
+                        <a href="#" id="user-globe" class="user-options-item" data-toggle="modal"
+                            data-target='#modal-globe'><i class="fas fa-globe"></i></a>
+                        <a href="#" id="user-folder" class="user-options-item"><i class="far fa-folder-open"></i></a>
+
+                        <a href="#" id="user-bell" data-toggle="modal" data-target='#modal-bell'
+                            class="user-options-item">
+                            <i class="far fa-bell"></i>
+                            <span class="punto-rojo"></span>
+                        </a>
+                        </a>
+
+                        <a href="#" id="user-info" class="user-options-item"><i class="far fa-question-circle"></i></a>
+                    </span>
+                </span>
+
+                <a href="#" class="user" data-toggle="modal" data-target='#modal-user' id="user">
+                    <i class="far fa-user click-to-modaluser"></i>
+                </a>
+            </span>
+
+            <a href="#" class="item-5">
+                <img src="./img/INTERFAZ/flecha-salida.png" class="nav-item-5" alt="" srcset="">
+            </a>
+        </div> 
+ 
+    </div>
+
+    <div class="content">
+        <nav class="main-menu" id="lateral-menu">
+            <ul class="menu-nav">
+                <li>
+                    <a href="#" id="home" class="default-hover logo-main-menu">
+                        <img src="./img/INTERFAZ/logo-MOSAIKUS-WHITE.png" class="nav-item-primary" alt="" srcset="">
+                        <span class="nav-text">
+                            MOSAIKUS
+                        </span>
+                    </a>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                       <img src="./img/main-menu-icons/1-documentos.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Documentos
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador De Documentos</a></li>
+                        <li><a href="#">Maestro de Documentos</a></li>
+                        <li><a href="#">Dashboard de Documentos</a></li>
+                        <li><a href="#">Lista de Distribución</a></li>
+                        <li><a href="#" id="config">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Parámetros de Documento</a></li>
+                                <li><a href="#">Parámetro de Formularios</a></li>
+                                <li><a href="#">Migración de Responsibilidades</a></li>
+                                <li><a href="#">Código de Áreas</a></li>
+                                <li><a href="#">Tipos de Documentos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/2-formularios.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Formularios & Registros
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador de Formularios</a></li>
+                        <li><a href="#">Maestro de Formularios</a></li>
+                        <li><a href="#">Maestro de Registros</a></li>
+                    </ul>
+
+                </li>
+                <li class="has-subnav">
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/3-ocurrencias.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Ocurrencias
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Ocurrencias con Plan de Acción</a></li>
+                        <li><a href="#">Ocurrencias con Correciones</a></li>
+                        <li><a href="#">Seguimiento de Acciones Correctivas</a></li>
+                        <li><a href="#">Dashboard de Plan de Accion</a></li>
+                        <li><a href="#">Dashboard Correciones</a></li>
+                        <li><a href="#">Dashboard Afecta a Persona</a></li>
+                        <li><a href="#">Dashboard de Resultados</a></li>
+                        <li><a href="#">Dotación y horas hombres</a></li>
+                    </ul>
+
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/4-competencias.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Competencias Criticas
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Familias</a></li>
+                        <li><a href="#">Listado de Requisitos</a></li>
+                        <li><a href="#">Requisitos de Cargo</a></li>
+                        <li><a href="#">Matriz de Competencias Cricticas</a></li>
+                        <li><a href="#">Dashboard de Competencias Cricticas</a></li>
+                    </ul>
+
+                </li>
+                
+                <li>
+                    <a href="#" class="riesgos-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/5-gestion.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Gestión de Riesgos
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Permisos de Trabajo</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Matriz de Riesgo</a></li>
+                        <li><a href="#">Administrador de Matriz de Riesgo</a></li>
+                        <li><a href="#">Vinculación con Matriz de Riesgo</a></li>
+                        <li><a href="#">Controles Transversales</a></li>
+                        <li><a href="#" id="config">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Listados</a></li>
+                                <li><a href="#">Ámbito</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/6-objetivos.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Objetivos & Programas
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#" id="metas">Objetivos y Metas</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Programación</a></li>
+                                <li><a href="#">Ejecución</a></li>
+                                <li><a href="#">Cumplimiento</a></li>
+                                <li><a href="#">Flujo de Trabajo</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" id="programas">Programas</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Actividades Descriptivas</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                        <li><a href="#">Administrar Actividades Descriptivas Ejecutadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="seguimiento">Seguimiento y Monitoreo</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                        <li><a href="#">Administrar Actividades de Seguimiento & Monitoreo
+                                                Ejecutadas</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="inspecciones">Inspecciones</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="verificadores">Verificadores Operacionales</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#" id="observaciones">Observaciones</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#" id="reuniones">Reuniones de Equipo</a>
+                                    <ul class="subx3Menu" id="subx3Section">
+                                        <li><a href="#">Programación</a></li>
+                                        <li><a href="#">Ejecución</a></li>
+                                        <li><a href="#">Cumplimiento</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Listado de Actividades Programadas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Dashboard con Actividades Generales</a></li>
+                        <li><a href="#">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Plantillas Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Familias Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Unidades Seguimiento & Monitoreo</a></li>
+                                <li><a href="#">Categoría de Actividades</a></li>
+                                <li><a href="#">Subcategoría de Actividades</a></li>
+                                <li><a href="#">Parametros de Actividades</a></li>
+
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="inspecciones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/7-inspecciones.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Inspecciones & Verificar Operaciones
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Inspecciones</a></li>
+                        <ul class="subsubMenu" id="subsubSection">
+                            <li><a href="#">Administrador de Inspecciones</a></li>
+                            <li><a href="#">Plantillas</a></li>
+                            <li><a href="#">Dashboard de Inspecciones</a></li>
+                        </ul>
+                        <li><a href="#">Verificadores Operacionales</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Administrador de V.O</a></li>
+                                <li><a href="#">Plantillas</a></li>
+                                <li><a href="#">Dashboard de V.O</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="observaciones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/8-observaciones.png" class="nav-item" alt="" srcset="">
+
+
+                        <span class="nav-text">
+                            Observaciones
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Gestión de Observaciones</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Configuración</a>
+                            <ul class="subsubMenu" id="subsubSection">
+                                <li><a href="#">Categorías</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="reuniones-seccion" id="optionMenu">
+                        <img src="./img/main-menu-icons/9-reuniones.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Reuniones de Equipo
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+                    </a>
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Administrador de Reuniones</a></li>
+                        <li><a href="#">Compromisos</a></li>
+                        <li><a href="#">Tipos</a></li>
+                        <li><a href="#">Familias</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="default-hover" id="optionMenu">
+                        <img src="./img/main-menu-icons/10-geolocalizacion.png" class="nav-item" alt="" srcset="">
+
+                        <span class="nav-text">
+                            Geolocalización
+                        </span>
+                        <img src="./img/left.png" class="left" alt="left">
+
+                    </a>
+
+                    <ul class="submenu-nav" id="subMenuSection">
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container-mosaikus">
+            <div class="admin">
+                <div class="title">
+                    <h3>Administrador de Verificador Operacional</h3>
+                    <span class="vista-admin">
+                        <a href="#" class="link-back">
+                          <img src="./img/Administrador/flecha-atras.png" alt="" srcset="">
+                            <span>Volver</span>
+                        </a>
+
+                    </span>
+                </div>
+                <div class="title-verif-operacional">
+                    <p class="title-verif">CREAR VERIFICADOR OPERACIONAL</p>
+                </div>
+                  <div class="admin-interfaz">
+
+                        <div class="identificacion card">
+                            <div class="card-header iden">
+                                <a href="#"  id="responsiveIden">
+                                <h5 class="card-title-adminsect">Identificacion</h5>
+                                <span class="flecha-responsive">
+                                   
+                                    <i class="fas fa-angle-down"></i>
+                                    
+                                                                           
+                                </span>
+                            </a>
+                            </div>
+
+                            <div class="card-body" id="idenResp">
+                                <h5 class="card-title-iden">Configuraciones</h5>
+                                <form  id="form-admin">
+
+                                    <div class="arbol-admin">
+                                        <label for="arbol">Árbol Organizacional</label>
+                                        <input type="text" class="form-admin" placeholder="(Seleccionar)"  name="arbol" id="arbol">
+                                        <span class="error" id="errorArbol">Seleccione Una opcion</span>
+                                    </div>
+
+                                    <div class="check-admin">
+                                        <input class="inp-cbx" id="cbx" type="checkbox" style="display: none" />
+                                        <label class="cbx" for="cbx"><span>
+                                                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                </svg></span>
+                                            <span class="arbol-check">Requiere Árbol de Procesos</span></label>
+                                    </div>
+
+                                    <div class="input-admin">
+                                        <label for="input-act-admin">Acitividad</label>
+                                        <select name="actOpt" id="actOpt" class="select-admin">
+                                            <option value=""></option>
+                                            <option value="1">Opcion 1</option>
+                                            <option value="2">Opcion 2</option>
+                                            <option value="3">Opcion 3</option>
+                                        </select>
+                                        
+                                        <span class="error" id="errorAct">Seleccione Una opcion</span>
+                                    </div>
+
+                                    <div class="input-admin">
+                                        <label for="input-verif-admin">Verificador Operacional</label>
+                                        <select name="verifOpt" id="verifOpt" class="select-admin">
+                                            <option value=""></option>
+                                            <option value="1">Opcion 1</option>
+                                            <option value="2">Opcion 2</option>
+                                            <option value="3">Opcion 3</option>
+                                        </select>
+                                        
+                                        
+                                        <span class="error" id="errorVerif">Seleccione Una opcion</span>
+
+                                    </div>
+
+                                    <div class="input-admin">
+                                        <label for="fecha">Fecha</label>
+                                        <input type="date" class="" id="date">
+                                        <span class="error" id="errorDate">Seleccione Una Fecha</span>
+
+                                    </div>
+
+
+
+                                    <div class="check-admin">
+                                        <p class="empresa-asociada">¿Asociado a la empresa?</p>
+                                        <div class="checkss">
+                                            <input class="inp-cbx" id="cbx-2" type="checkbox" style="display: none" />
+                                            <label class="cbx" for="cbx-2"><span>
+                                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                    </svg></span>
+                                                <span class="empresa-check">Si</span></label>
+
+                                            <input class="inp-cbx" id="cbx-3" type="checkbox" style="display: none" />
+                                            <label class="cbx" for="cbx-3"><span>
+                                                    <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                    </svg></span>
+                                                <span class="empresa-check">No</span></label>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-admin">
+                                        <p class="ref-admin">Referencia Complementaria</p>
+                                        <textarea name="text-admin" id="" cols="25" rows="5"
+                                            class="textaera-admin"></textarea>
+                                    </div>
+
+                                    <div class="input-admin">
+                                        <label for="input-act-admin">Realizado Por</label>
+                                        <select name="act-opt" id="" class="select-admin">
+                                            <option value=""></option>
+                                            <option value="1">Opcion 1</option>
+                                            <option value="2">Opcion 2</option>
+                                            <option value="3">Opcion 3</option>
+                                        </select>
+
+
+                                    </div>
+
+                                    <div class="file-admin">
+                                        <p class="label-file">Anexos</p>
+                                        <label for="file-admin" class="input-file">Añadir Archivo</label>
+                                        <input type="file" id="file-admin" class="file-input">
+                                       
+                                    </div>
+
+                                    <div class="check-admin">
+                                        <div class="checkss">
+
+                                            <div class="check-1">
+                                                <input class="inp-cbx" id="cbx-4" type="checkbox" style="display: none" />
+                                                <label class="cbx" for="cbx-4"><span>
+                                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                        </svg></span>
+                                                    <span class="agroup-check">Agrupar Correciones</span></label>
+                                            </div>
+                                            <div class="check-2">
+                                                <input class="inp-cbx" id="cbx-5" type="checkbox" style="display: none" />
+                                                <label class="cbx" for="cbx-5"><span>
+                                                        <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                        </svg></span>
+                                                    <span class="agroup-check">Agrupar Plan de Acción</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="cuadro-admin">
+                                        <div class="">
+                                            <span class="text">Si</span>
+                                            <span class="number">10</span>
+                                        </div>
+                                        <div class="">
+                                            <span class="text">No</span>
+                                            <span class="number">5</span>
+                                        </div>
+                                        <div class="">
+                                            <span class="text">No Aplica</span>
+                                            <span class="number">3</span>
+                                        </div>
+
+                                        <div class="">
+                                            <span class="text">Cumplimiento</span>
+                                            <span class="number">3</span>
+                                        </div>
+
+                                    </div>
+
+                                
+                                    <div class="col">
+                                        <input type="submit" id="btnSEND" class="modal-btn-save btn btn-save-user btn-block" 
+                                            data-dismiss="modal" value="Enviar">
+                                    </div>
+                             </form>
+                            </div>
+                        </div>
+                        <div class="verificadores card">    
+                            <div class="card-header verif">
+                                <a href="#" id="responsiveVerif">
+
+                                <h5 class="card-title-adminsect">Verificadores</h5>
+                                <span class="flecha-responsive">
+                                    <i class="fas fa-angle-down"></i>
+                                       
+                                    
+                                </span>
+                            </a>
+                            </div>
+
+
+
+                            <div class="accordion" id="accordionExample">
+                                <div class="card card-imgs">
+                                    <div class="title-category" id="headingOne">
+                                       
+                                        <h2 class="mb-0 ">
+                                            <button class="btn btn-link btn-block" type="button" data-toggle="collapse"
+                                                data-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <span> CATEGORÍA 1 DE 735 - DISEÑO </span> </button>
+                                        </h2>
+                                    </div>
+                                    <span><a href="#" class="na-button">N/A</a></span>
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body scroll-imgs">
+                                            <div class="images">
+                                                <h6>IMÁGENES REFERENCIALES</h6>
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                                <img src="./img/1.png" class="img-1" alt="" srcset="">
+                                                <img src="./img/2.png" class="img-2" alt="" srcset="">
+                                                <img src="./img/3.png" class="img-3" alt="" srcset="">
+                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-verif">
+                                    <div class="title-category-gray" id="headingTwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                                <strong>1.1</strong> Realizar Diseños de Plantillas
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <p class="once-text">Lorem ipsum dolor sit amet consectetur adipiscing elit,
+                                                quam justo nulla magna nisl dignissim quisque dui, et maecenas urna
+                                                porttitor tellus sollicitudin. Commodo mus quam dictum eleifend
+                                                vestibulum laoreet bibendum morbi, ultrices viverra nulla aliquet tortor
+                                                varius ac habitant, quisque justo conubia tempus sagittis nullam
+                                                phasellus. Fringilla vivamus gravida ac tempor blandit parturient montes
+                                                integer, congue erat luctus nisi posuere penatibus semper cum urna, nibh
+                                                in enim habitant interdum quisque magnis.</p>
+                                                <div class="radiobuttons">
+                                                    <form action="" class="radio-form">
+                                                        <div class="radiobtns">
+                                                            <input type="radio" name="opc" id="1">
+                                                            <label for="1">Cumple</label>
+                                            
+                                                            <input type="radio" name="opc" id="2">
+                                                            <label for="2">No Cumple</label>
+
+                                                            <input type="radio" name="opc" id="3">
+                                                            <label for="3">No Aplica</label>
+
+                                                            <input type="radio" name="opc" id="4">
+                                                            <label for="4">No Se Verifica</label>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            <div class="once-observacion">
+                                                <p>Observacion</p>
+                                                <textarea name="obs" id="" cols="85" rows="5"></textarea>
+
+                                                <div class="once-checks">
+                                                    <span class="once-check-1">
+
+                                                        <input class="inp-cbx" id="cbx-6" type="checkbox"
+                                                            style="display: none" />
+                                                        <label class="cbx" for="cbx-6"><span>
+                                                                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                                </svg></span>
+                                                            <span class="obs-check">Generar Correcion</span></label>
+                                                    </span>
+                                                    <span class="once-check-2">
+
+                                                        <input class="inp-cbx" id="cbx-7" type="checkbox"
+                                                            style="display: none" />
+                                                        <label class="cbx" for="cbx-7"><span>
+                                                                <svg width="12px" height="10px" viewbox="0 0 12 10">
+                                                                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                                                                </svg></span>
+                                                            <span class="obs-check">Generar Observación</span></label>
+                                                    </span>
+
+                                                    <span class="once-input">
+                                                        <input type="text" placeholder="Responsable de la Accion">
+                                                    </span>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card card-verif">
+                                    <div class="title-category-gray" id="headingThree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <strong>1.2</strong> El Diseño de Los Estandares
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                            richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                            dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                                            tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
+                                            assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                                            wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                                            vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
+                                            synth nesciunt you probably haven't heard of them accusamus labore
+                                            sustainable VHS.
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card card-verif">
+                                    <div class="title-category-gray" id="headingFour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                                data-toggle="collapse" data-target="#collapseFour" aria-expanded="false"
+                                                aria-controls="collapseFour">
+                                                <strong>1.3</strong> Imágenes en el Diseño
+                                            </button>
+                                        </h2>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-parent="#accordionExample">
+                                        <div class="card-body ">
+
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="form-row btns-config-user">
+                                    <div class="col spaceRes">&nbsp;</div>
+
+                                    <div class="col">
+                                        <button class="modal-btn-save btn btn-save-user btn-block" id="save-adm"
+                                            data-dismiss="modal">Guardar</button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="modal-btn-cancel btn-save-user sss btn btn-block" id="cancel-adm"
+                                            data-dismiss="modal">Cancelar</button>
+                                    </div>
+                                    <div class="col spaceRes">&nbsp;</div>
+
+                                </div>
+                            </div>
+
+                            <span class="spacex">&nbsp;</span>
+                        </div>
+                    </div>
+               
+
+            </div>
+        </div>
+    </div>
+       <!-- JQUERY, POPPER AND BOOTSTRAP SCRIPTS -->
+       <script src="./js/jquery.js"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+           integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+           crossorigin="anonymous"></script>
+       <!-- CUSTOM SCRIPT -->
+       <script src="./js/main.js"></script>
+       <script src="./js/admin.js"></script>
+       
+       <!-- FONT AWESOME SCRIPT -->
+       <script src="https://kit.fontawesome.com/f26a62c07c.js" crossorigin="anonymous"></script>
+       <!-- SELECT2 JQUERY -->
+       <script src="./js/select2js/select2.full.min.js"></script>
+</body>
+</html>

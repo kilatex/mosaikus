@@ -1,0 +1,85 @@
+.liderazgo-3{
+	display: none;
+}
+
+.vista-3{
+	display: none;
+	justify-content: flex-end;
+}
+
+.actividades{
+	display: block;
+}
+
+
+
+.liderazgo-3 table{
+	font-size: 9px;
+	
+}
+
+.opciones-liderazgo3{
+   width: 120px  !important;
+   font-size: 20px;
+}
+
+.opcio
+
+.opciones-liderazgo3 span{
+	margin: 0px 2px;
+}
+
+.opciones-liderazgo3 a{
+	text-decoration: none !important;
+	color: black !important;
+}
+
+
+.id span{
+	padding: 5px;
+	font-size: 12px;
+	background: #F2F4F7;
+	border-radius: 5px;
+}
+
+
+table td{
+	font-size: 10px;
+}
+
+.table-actividades{
+    padding: 10px !important;
+    border-radius: 10px !important;
+}
+
+.table-actividades h6{
+	font-size: 14px;
+}
+
+
+table.table th{
+color: #c0c0c0;
+}
+
+@media screen and (max-width: 856px){
+ .pendientes h3{
+    margin-left: 5px;
+ }
+.table-actividades{
+    margin-left: 5px;
+	display: grid;
+	overflow-x: auto;
+}
+
+.modal-arbol{
+	position: absolute;
+	left: -140px !important;
+	width:  350px !important;
+}
+.modal-arbol .modal-arbol-search{
+	width: 180px;
+}
+.vista-3{
+	margin-right: 5px;
+}
+}

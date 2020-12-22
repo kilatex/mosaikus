@@ -1,0 +1,242 @@
+.title-prototipado h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-left: 35px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+.search-bar .navbar .form-inline{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.search-bar {
+    background: transparent !important;
+    margin-top: 0px !important;
+}
+
+.search-prototipado{
+    width: 500px !important;
+    height: 36px !important;
+    padding-left: 35px !important;
+    background: #292929 !important;
+    color: white !important;
+    border-radius: 10px !important;
+}
+
+.menu-config-prototipado{
+    color: #ccc;
+    position: relative;
+    left: -35px;
+    text-decoration: none !important;
+    transition: all 300ms;
+}
+
+.menu-config-prototipado:hover{
+    color: white;
+}
+
+.otros-botones.otros-botones-prototipado .btn {
+    margin: 0 !important;
+    background: red;
+}
+
+.col-md-5 .otros-botones.otros-botones-prototipado {
+    margin-top: 10px;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.search-prototipado-icon{
+    position: absolute;
+    left: 34px;
+    top: 26px;
+    color: #ccc;
+}
+
+.filtros-prototipado{
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.filtros-rapidos{
+    position: absolute;
+    left: 12px;
+    display: none;
+}
+
+.filtros-personalizar{
+    position: absolute;
+    left: 400px;
+    width: 180px;
+    z-index: 10;
+    display: none;
+}
+
+.btn-prototipado{
+    margin-left: 10px;
+    background: white !important;
+    font-size: 12px !important;
+    padding: 7.6px 20px !important;
+    border: 1px solid black !important;
+    border-radius: 5px !important;
+    transition: all 300ms !important;
+    margin: 0px 10px !important;
+}
+
+.btn-prototipado:hover{
+    color: #02B7DC !important;
+    border: 1px solid  #02B7DC !important;
+}
+
+.btn-clicked{
+    color: #02B7DC !important;
+    border: 1px solid  #02B7DC !important;  
+}
+
+.filtros-rapidos .opciones, .filtros-personalizar .opciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 12px;
+    font-weight: bold;
+    background: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.filtros-rapidos .opciones div, .filtros-personalizar .opciones div{
+    text-align: start;
+}
+.filtros-rapidos div label, .filtros-rapidos div input,.filtros-personalizar div label, .filtros-personalizar div input{
+    cursor: pointer;
+}
+
+.filtros-rapidos div label, .filtros-personalizar div label{
+    position: relative;
+    top: -2px;
+}
+
+
+
+.filtros-prototipado .filtros-titulo{
+    color: rgb(173, 172, 172);
+    font-weight: bold;
+}
+
+.filtros-prototipado .filtros-lista ul{
+    display: flex;
+   justify-content: flex-start;
+   margin-left: -42px;
+}
+
+.filtros-prototipado .filtros-lista ul li{
+   font-weight: 500;
+    font-size: 14px;
+    color: #02B7DC;
+    padding: 2px 10px;
+    border: 1.5px solid #02B7DC;
+    border-radius: 10px;
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.filtros-lista{
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+.filtros-lista::-webkit-scrollbar{
+    height: 8px !important;
+}
+.filtros-lista a{
+    text-decoration: none !important;
+}
+
+.titulos-table-prototipado th{
+    font-size: 10px;
+    text-align: center;
+}
+
+.table-actividades td{
+    text-align: center;
+}
+
+.table-prototipado .titulo-columna-protitipado{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.flechas-columna{
+    font-size: 0px;
+    padding: 0;
+    margin-right: -25px;
+    margin-left: -15px;
+    position: relative;
+  
+}
+
+.flechas-columna .fa-angle-up{
+    position: relative;
+    margin-top: -20px;
+    top: 10px;
+    color: #ccc;
+}
+
+.flechas-columna .fa-angle-down{
+   position: relative;
+   top: -10px;
+   margin-bottom: -20px;
+   padding-bottom: -20px;
+   color: #ccc;
+}
+
+.etapa-flujo .titulo-columna{
+    width: 127px;
+    margin-right: -20px;
+}
+
+.etapa-flujo{
+    padding-right: -20px;
+}
+
+.table-actividades{
+   min-width: 1430px;
+   overflow-x: scroll;
+}
+
+.table-prototipado tr th{
+    cursor: pointer;
+}
+
+.dias-columna{
+    margin-right: -40px !important;
+}
+
+.cbx-prot-label{
+ font-size: 12px;
+ margin-left: -5px;
+ color: #02B7DC;
+ font-weight: bold;
+}
+
+.table-actividades .pdf{
+    font-size: 18px;
+}
+
+.table-actividades .pdf a{
+    color: #02B7DC !important;
+}
+
+.table-actividades .tipo-documento span, .table-actividades .arbol span{
+    margin-right: 15px;
+}
+
+.clicked{
+    color: #02B7DC !important;
+}
